@@ -15,6 +15,9 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+        headings: ["din-condensed-variable", "sans-serif"],
+        display: ["Pacifico", "sans-serif"]
         // Add more custom font families as needed
       },
     },

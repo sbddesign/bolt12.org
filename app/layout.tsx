@@ -17,12 +17,10 @@ export default function RootLayout({
         <title>Bolt12</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Pixelify+Sans:wght@400..700&family=Protest+Revolution&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.typekit.net/pqu3bot.css"></link>
       </head>
-      <body className="font-poppins">{children}</body>
+      <body className={``}>{children}</body>
     </html>
   );
 }
