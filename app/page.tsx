@@ -16,8 +16,8 @@ export default function Home() {
         </div>
       </div>
       {/* User Stories */}
-      <div className="flex flex-col items-center w-full mt-24">
-        <div className="flex  justify-start items-center w-full gap-20">
+      <div className="flex flex-col items-center w-full mt-24 gap-20">
+        <div className="flex justify-start items-center w-full gap-20">
           <img src="/users/alice.svg" alt="Alice" className="w-1/3" />
           <div className="flex flex-col gap-4 w-2/5">
             <h2 className="text-4xl text-[#6D4FA6]">
@@ -29,6 +29,58 @@ export default function Home() {
               new QR code for every fan that wants to tip us after gig, and
               watching 75% of them lose interest after they saw how long it took
               us to make BOLT11 invoices.
+            </span>
+          </div>
+        </div>
+        <div className="flex justify-end items-center w-full gap-20">
+          <div className="flex flex-col gap-4 w-2/5">
+            <h2 className="text-4xl text-[#FFA100]">Receiver Privacy</h2>
+            <span>
+              As a shadowy super coder that makes contributions to Bitcoin Core,
+              I needed a way to accept donations for my work in a way that helps
+              me preserve my anonymity and separate my various digital
+              identities. BOLT 12’s route blinding helps me accept payments on
+              the down-low!
+            </span>
+          </div>
+          <img src="/users/brijesh.svg" alt="Brijesh" className="w-1/3" />
+        </div>
+        <div className="flex justify-start items-center w-full gap-20">
+          <img src="/users/charlotte.svg" alt="Charlotte" className="w-1/3" />
+          <div className="flex flex-col gap-4 w-2/5">
+            <h2 className="text-4xl text-[#FA4FAA]">Social Integrations</h2>
+            <span>
+              As a content creator on Nostr, I needed a way to accept zaps on my
+              artwork that was self-custodial. I was able to easily publish my
+              bitcoin wallet’s payment code to my Nostr profile and receive zaps
+              without any custodians or middle-men. BOLT 12 is a great way to
+              support the arts!
+            </span>
+          </div>
+        </div>
+        <div className="flex justify-end items-center w-full gap-20">
+          <div className="flex flex-col gap-4 w-2/5">
+            <h2 className="text-4xl text-[#00C4D5]">Auto-withdrawals</h2>
+            <span>
+              I heard some guys talking about bitcoin on XNBC Squawk Cube, so I
+              decided to buy it. Then I learned that I shouldn’t trust exchanges
+              and it’s better to self-custody bitcoin. So, I setup my exchange
+              account to auto-deposit my bitcoin to my self-custodial wallet
+              using my BOLT 12 offer.
+            </span>
+          </div>
+          <img src="/users/danh.svg" alt="Danh" className="w-1/3" />
+        </div>
+        <div className="flex justify-start items-center w-full gap-20">
+          <img src="/users/elaheh.svg" alt="Elaheh" className="w-1/3" />
+          <div className="flex flex-col gap-4 w-2/5">
+            <h2 className="text-4xl text-[#2ACA4D]">Social Integrations</h2>
+            <span>
+              I needed a way to accept donations for my work as an activist
+              living under an authoritarian regime. The problem is that many
+              payment services would block me based on my IP address. Now, with
+              onion messaging, nobody needs to know my IP address. Fight the
+              patriarchy!
             </span>
           </div>
         </div>
