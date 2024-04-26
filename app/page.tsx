@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 pt-20">
-      <div className="h-screen flex items-center flex-col">
+    <main className="flex min-h-screen flex-col items-center">
+      <div className="h-screen flex items-center flex-col gap-8 p-4 py-12 lg:px-12">
         {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
-        <Image src={"/bolt-12-hero.png"} alt="Welcome to BOLT 12 - 'This is how we bitcoin in the future!'" width={1372} height={723} />
+        <Image src={"/bolt-12-hero.png"} alt="Welcome to BOLT 12 - 'This is how we bitcoin in the future!'" width={1372} height={723} className="w-full max-w-[1372px]" />
         <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
           <span className="text-[#2BAFF6]">
             Ever wondered what it’s like to live in the futuristic utopia of
