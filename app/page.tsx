@@ -2,10 +2,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center gap-24">
       <div className="h-screen flex items-center flex-col gap-8 p-4 py-12 lg:px-12">
         {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
-        <Image src={"/bolt-12-hero.png"} alt="Welcome to BOLT 12 - 'This is how we bitcoin in the future!'" width={1372} height={723} className="w-full max-w-[1372px]" />
+        <Image
+          src={"/bolt-12-hero.png"}
+          alt="Welcome to BOLT 12 - 'This is how we bitcoin in the future!'"
+          width={1372}
+          height={723}
+          className="w-full max-w-[1372px]"
+        />
         <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
           <span className="text-[#2BAFF6]">
             Ever wondered what it’s like to live in the futuristic utopia of
@@ -15,7 +21,7 @@ export default function Home() {
         </div>
       </div>
       {/* User Stories */}
-      <div className="flex flex-col items-center w-full mt-24 gap-20">
+      <div className="flex flex-col items-center w-full gap-20">
         <div className="flex justify-start items-center w-full gap-20">
           <img src="/users/alice.svg" alt="Alice" className="w-1/3" />
           <div className="flex flex-col gap-4 w-2/5">
@@ -81,6 +87,27 @@ export default function Home() {
               onion messaging, nobody needs to know my IP address. Fight the
               patriarchy!
             </span>
+          </div>
+        </div>
+      </div>
+      {/* How to Integrate */}
+      <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full">
+        <div className="flex flex-col gap-20 w-2/3">
+          <div className="flex justify-between">
+            <div className="bg-[#37869F] w-[454px] h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
+              <span className="text-[#FFF963] text-3xl ">
+                How to Integrate BOLT12
+              </span>
+            </div>
+            <div className="bg-[#FFF963]">
+              <span className="text-[#FF2E00]">Read the Spec</span>
+            </div>
+          </div>
+          <div className="gap-20 grid grid-cols-1 md:grid-cols-2">
+            <div className="w-[200px] h-[100px] bg-red-300"></div>
+            <div className="w-[200px] h-[100px] bg-red-300"></div>
+            <div className="w-[200px] h-[100px] bg-red-300"></div>
+            <div className="w-[200px] h-[100px] bg-red-300"></div>
           </div>
         </div>
       </div>
