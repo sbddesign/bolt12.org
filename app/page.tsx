@@ -1,8 +1,8 @@
-import Image from "next/image"
-import {Inter, Pacifico} from "next/font/google"
+import Image from "next/image";
+import { Inter, Pacifico } from "next/font/google";
 
-const inter = Inter({subsets: ["latin"]})
-const pacifico = Pacifico({subsets: ["latin"], weight: '400'})
+const inter = Inter({ subsets: ["latin"] });
+const pacifico = Pacifico({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   const nodeImagePaths = [
@@ -33,18 +33,44 @@ export default function Home() {
         {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
 
         <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
-          <Image src={"/hero/bolt-12-hero-text-shadow.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float" />
-          <Image src={"/hero/bolt-12-hero-image.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-image-float" />
-          <Image src={"/hero/bolt-12-hero-text.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float" />
-          <Image src={"/hero/bolt-12-hero-logo.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float" />
+          <Image
+            src={"/hero/bolt-12-hero-text-shadow.png"}
+            alt=""
+            width={1372}
+            height={723}
+            className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float"
+          />
+          <Image
+            src={"/hero/bolt-12-hero-image.png"}
+            alt=""
+            width={1372}
+            height={723}
+            className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-image-float"
+          />
+          <Image
+            src={"/hero/bolt-12-hero-text.png"}
+            alt=""
+            width={1372}
+            height={723}
+            className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float"
+          />
+          <Image
+            src={"/hero/bolt-12-hero-logo.png"}
+            alt=""
+            width={1372}
+            height={723}
+            className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float"
+          />
         </div>
-   
+
         <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
           <span className="text-[#2BAFF6] font-headings font-regular">
             Ever wondered what it’s like to live in the futuristic utopia of
             BOLT 12?
           </span>
-          <span className="text-[#E64500] font-display">Let’s take a look!</span>
+          <span className="text-[#E64500] font-display">
+            Let’s take a look!
+          </span>
         </div>
       </div>
       {/* User Stories */}
@@ -122,7 +148,7 @@ export default function Home() {
         <div className="flex flex-col gap-20 w-10/12 mt-12 justify-center">
           <div className="flex justify-between">
             <div className="bg-[#37869F] w-[454px] h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
-              <span className="text-[#FFF963] text-3xl">
+              <span className="text-[#FFF963] text-4xl font-headings">
                 How to Integrate BOLT12
               </span>
             </div>
