@@ -45,6 +45,7 @@ const config: Config = {
       animation: {
         "menu-slide": "menu-slide 0.5s ease-in-out both",
         "menu-overlay-fade": "menu-overlay-fade 0.5s ease-in-out both",
+        "header-slide": "menu-slide 0.25s ease-in-out both",
         "hero-logo-float": "hero-logo-float 6s ease-in-out infinite",
         "hero-text-float": "hero-text-float 6s ease-in-out infinite",
         "hero-image-float": "hero-image-float 6s ease-in-out infinite",
