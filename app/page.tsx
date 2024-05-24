@@ -4,6 +4,7 @@ import {Inter, Pacifico} from "next/font/google"
 import {MenuIcon} from "@bitcoin-design/bitcoin-icons-react/filled"
 import React from "react"
 import Header from "@/components/Header";
+import UserProfile from "@/features/UserProfile";
 
 const inter = Inter({subsets: ["latin"]})
 const pacifico = Pacifico({subsets: ["latin"], weight: '400'})
@@ -55,6 +56,7 @@ export default function Home() {
         </div>
         {/* User Stories */}
         <div className="flex flex-col items-center w-full mt-24 gap-20">
+          <UserProfile />
           <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
             <img src="/users/alice.svg" alt="Alice" className="w-1/3" />
             <div className="flex flex-col gap-4 w-2/5">
