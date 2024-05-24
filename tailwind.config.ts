@@ -21,6 +21,14 @@ const config: Config = {
         // Add more custom font families as needed
       },
       keyframes: {
+        "menu-slide": {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' }
+        },
+        "menu-overlay-fade": {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' }
+        },
         "hero-logo-float": {
           '0%, 100%': { transform: 'translateY(10px)' },
           '50%': { transform: 'translateY(-10px)' },
@@ -35,6 +43,8 @@ const config: Config = {
         }
       },
       animation: {
+        "menu-slide": "menu-slide 0.5s ease-in-out both",
+        "menu-overlay-fade": "menu-overlay-fade 0.5s ease-in-out both",
         "hero-logo-float": "hero-logo-float 6s ease-in-out infinite",
         "hero-text-float": "hero-text-float 6s ease-in-out infinite",
         "hero-image-float": "hero-image-float 6s ease-in-out infinite",
