@@ -68,7 +68,6 @@ export default function Home() {
               className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float"
             />
           </div>
-
           <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
             <span className="text-[#685588] font-headings font-regular">
               Ever wondered what it’s like to live in the futuristic utopia of
@@ -80,10 +79,10 @@ export default function Home() {
           </div>
         </div>
         {/* User Stories */}
-        <div className="flex flex-col items-center w-full mt-24 gap-20">
+        <div className="flex flex-col items-center w-full my-24 gap-20">
           <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
             <img src="/users/alice.svg" alt="Alice" className="w-1/3" />
-            <div className="flex flex-col gap-4 w-2/5">
+            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
               <h2 className="text-4xl text-[#6D4FA6]">
                 Reusable Payment Requests
               </h2>
@@ -96,8 +95,8 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-end items-center w-full gap-20">
-            <div className="flex flex-col gap-4 w-2/5">
+          <div className="flex flex-col-reverse md:flex-row justify-end items-center w-full gap-20">
+            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
               <h2 className="text-4xl text-[#FFA100]">Receiver Privacy</h2>
               <span>
                 As a shadowy super coder that makes contributions to Bitcoin
@@ -111,7 +110,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
             <img src="/users/charlotte.svg" alt="Charlotte" className="w-1/3" />
-            <div className="flex flex-col gap-4 w-2/5">
+            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
               <h2 className="text-4xl text-[#FA4FAA]">Social Integrations</h2>
               <span>
                 As a content creator on Nostr, I needed a way to accept zaps on
@@ -122,8 +121,8 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-end items-center w-full gap-20">
-            <div className="flex flex-col gap-4 w-2/5">
+          <div className="flex flex-col-reverse md:flex-row justify-end items-center w-full gap-20">
+            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
               <h2 className="text-4xl text-[#00C4D5]">Auto-withdrawals</h2>
               <span>
                 I heard some guys talking about bitcoin on XNBC Squawk Cube, so
@@ -137,7 +136,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
             <img src="/users/elaheh.svg" alt="Elaheh" className="w-1/3" />
-            <div className="flex flex-col gap-4 w-2/5">
+            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
               <h2 className="text-4xl text-[#2ACA4D]">Social Integrations</h2>
               <span>
                 I needed a way to accept donations for my work as an activist
