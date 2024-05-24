@@ -7,24 +7,6 @@ import Header from "@/components/Header";
 
 const inter = Inter({subsets: ["latin"]})
 const pacifico = Pacifico({subsets: ["latin"], weight: '400'})
-// const headerLinks = [
-//   {
-//     href: "#",
-//     text: "User Stories"
-//   },
-//   {
-//     href: "#",
-//     text: "Developer Docs"
-//   },
-//   {
-//     href: "#",
-//     text: "Read the Spec"
-//   },
-//   {
-//     href: "#",
-//     text: "Get Involved"
-//   },
-// ]
 
 export default function Home() {
     const nodeImagePaths = [
@@ -49,39 +31,9 @@ export default function Home() {
           "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
       },
     ];
-  // const [showNav, setShowNav] = React.useState(false)
-  // const [showHeader, setShowHeader] = React.useState(false)
-
-  // React.useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 200) {
-  //       setShowHeader(true)
-  //     } else {
-  //       setShowHeader(false)
-  //     }
-  //   }
-  //   window.addEventListener('scroll', handleScroll)
-  //   return () => window.removeEventListener('scroll', handleScroll)
-  // }, [])
 
   return (
     <>
-      {/* <div className={"fixed bg-slate-200/75 w-full h-full z-40 transition-opacity duration-500" + (showNav ? " animate-menu-overlay-fade" : " hidden")} onClick={()=>setShowNav(!showNav)}></div>
-      <header className={"fixed w-full z-50 md:flex md:flex-row md:justify-between md:border-b md:border-b-slate-300 drop-shadow-lg" + (!showHeader ? " md:hidden" : " md:animate-header-slide")}>
-        <div className="flex flex-row justify-between items-center p-4 bg-white relative z-40 border-b border-b-slate-300 md:border-0 lg:px-6">
-          <Image src={'/bolt12-logo.svg'} alt="BOLT 12" width={124} height={69} className="w-[72px] md:w-[144px]" />
-          <MenuIcon className="w-8 h-8 md:hidden" onClick={()=>setShowNav(!showNav)} />
-        </div>
-        <nav className={"w-full transition-all md:block" + (showNav ? " block animate-menu-slide" : " hidden")}>
-          <ul className="bg-[#37869F] w-full md:flex md:flex-row md:bg-white md:items-center md:justify-end md:h-full">
-            {headerLinks.map((link, index) => (
-              <li key={index} className="block md:h-full">
-                <a href={link.href} className="text-[#FFF963] font-headings text-3xl p-4 border-b border-[#4998B1] block w-full md:text-[#37869F] md:text-2xl md:font-normal md:border-0 md:h-full md:flex md:items-center lg:p-6">{link.text}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header> */}
       <Header shy />
       <main className="flex min-h-screen flex-col items-center pt-20">
         <div className="md:h-screen flex items-center justify-center flex-col gap-8 p-4 py-12 lg:px-12">

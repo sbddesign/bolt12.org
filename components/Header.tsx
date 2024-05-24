@@ -24,7 +24,7 @@ export default function Header(props:HeaderProps){
   
     const headerLinks = [
         {
-          href: "#",
+          href: "/ux-design",
           text: "User Stories"
         },
         {
@@ -46,7 +46,7 @@ export default function Header(props:HeaderProps){
             <div className={"fixed bg-slate-200/75 w-full h-full z-40 transition-opacity duration-500" + (showNav ? " animate-menu-overlay-fade" : " hidden")} onClick={()=>setShowNav(!showNav)}></div>
             <header className={"fixed w-full z-50 md:flex md:flex-row md:justify-between md:border-b md:border-b-slate-300 drop-shadow-lg" + (!showHeader && props.shy ? " md:hidden" : props.shy ? " md:animate-header-slide" : "")}>
                 <div className="flex flex-row justify-between items-center p-4 bg-white relative z-40 border-b border-b-slate-300 md:border-0 lg:px-6">
-                <Image src={'/bolt12-logo.svg'} alt="BOLT 12" width={124} height={69} className="w-[72px] md:w-[144px]" />
+                <a href="/"><Image src={'/bolt12-logo.svg'} alt="BOLT 12" width={124} height={69} className="w-[72px] md:w-[144px]" /></a>
                 <MenuIcon className="w-8 h-8 md:hidden" onClick={()=>setShowNav(!showNav)} />
                 </div>
                 <nav className={"w-full transition-all md:block" + (showNav ? " block animate-menu-slide" : " hidden")}>
