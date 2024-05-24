@@ -26,28 +26,28 @@ const headerLinks = [
 ]
 
 export default function Home() {
-   const nodeImagePaths = [
-    {
-      path: "/nodes/lnd.png",
-      description:
-        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
-    },
-    {
-      path: "/nodes/cln.png",
-      description:
-        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
-    },
-    {
-      path: "/nodes/eclair.png",
-      description:
-        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
-    },
-    {
-      path: "/nodes/ldk.png",
-      description:
-        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
-    },
-  ];
+    const nodeImagePaths = [
+      {
+        path: "/nodes/lnd.png",
+        description:
+          "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+      },
+      {
+        path: "/nodes/cln.png",
+        description:
+          "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+      },
+      {
+        path: "/nodes/eclair.png",
+        description:
+          "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+      },
+      {
+        path: "/nodes/ldk.png",
+        description:
+          "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+      },
+    ];
   const [showNav, setShowNav] = React.useState(false)
 
   return (
@@ -156,38 +156,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      {/* How to Integrate */}
-      <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full pb-24">
-        <div className="flex flex-col gap-20 w-10/12 mt-12 justify-center">
-          <div className="flex justify-between">
-            <div className="bg-[#37869F] w-[454px] h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
-              <span className="text-[#FFF963] text-4xl font-headings">
-                How to Integrate BOLT12
-              </span>
-            </div>
-            <div className="bg-[#FFF963] flex items-center justify-center w-[193px] h-[74px] rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] drop-shadow-lg">
-              <span className="text-[#FF2E00]">Read the Spec</span>
-            </div>
-          </div>
-          <div className="gap-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
-            {nodeImagePaths.map(({ path, description }, index) => (
-              <div
-                key={index}
-                className="flex gap-4 p-4 items-center w-[500px] h-[180px] bg-white  rounded-tl-[96px] rounded-tr-[8px] rounded-br-[96px] rounded-bl-[48px]"
-              >
-                <Image
-                  src={path}
-                  alt={`Node ${index}`}
-                  width={124}
-                  height={124}
-                />
-                <span>{description}</span>
+
+        {/* How to Integrate */}
+        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full pb-24">
+          <div className="flex flex-col gap-20 w-10/12 mt-12 justify-center">
+            <div className="flex justify-between">
+              <div className="bg-[#37869F] w-[454px] h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
+                <span className="text-[#FFF963] text-4xl font-headings">
+                  How to Integrate BOLT12
+                </span>
               </div>
-            ))}
+              <div className="bg-[#FFF963] flex items-center justify-center w-[193px] h-[74px] rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] drop-shadow-lg">
+                <span className="text-[#FF2E00]">Read the Spec</span>
+              </div>
+            </div>
+            <div className="gap-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+              {nodeImagePaths.map(({ path, description }, index) => (
+                <div
+                  key={index}
+                  className="flex gap-4 p-4 items-center w-[500px] h-[180px] bg-white  rounded-tl-[96px] rounded-tr-[8px] rounded-br-[96px] rounded-bl-[48px]"
+                >
+                  <Image
+                    src={path}
+                    alt={`Node ${index}`}
+                    width={124}
+                    height={124}
+                  />
+                  <span>{description}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
