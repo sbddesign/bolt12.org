@@ -202,6 +202,34 @@ export default function Home() {
             className="w-full transform scale-x-[-1] rotate-180"
           />
         </div>
+
+        <div className="flex flex-col items-center gap-10 my-40">
+          <span className="text-[#685588] font-display text-6xl">
+            Get Involved
+          </span>
+          <span>
+            Interested in pushing the standard forward or learning how to adopt?
+            Here’s where the action happens:
+          </span>
+          <div className="flex gap-4">
+            <a
+              href="#"
+              className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px]"
+            >
+              <span className="text-[#FFF963] text-2xl font-display">
+                Discord
+              </span>
+            </a>
+            <a
+              href="#"
+              className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px]"
+            >
+              <span className="text-[#FFF963] text-2xl font-display">
+                Github PR
+              </span>
+            </a>
+          </div>
+        </div>
       </main>
     </>
   );
