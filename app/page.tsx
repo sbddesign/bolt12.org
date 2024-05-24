@@ -81,7 +81,11 @@ export default function Home() {
         {/* User Stories */}
         <div className="flex flex-col items-center w-full my-24 gap-20">
           <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
-            <img src="/users/alice.svg" alt="Alice" className="w-1/3" />
+            <img
+              src="/users/alice.svg"
+              alt="Alice"
+              className="w-3/4 md:w-1/3"
+            />
             <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
               <h2 className="text-4xl text-[#6D4FA6]">
                 Reusable Payment Requests
@@ -106,10 +110,18 @@ export default function Home() {
                 payments on the down-low!
               </span>
             </div>
-            <img src="/users/brijesh.svg" alt="Brijesh" className="w-1/3" />
+            <img
+              src="/users/brijesh.svg"
+              alt="Brijesh"
+              className="w-3/4 md:w-1/3"
+            />
           </div>
           <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
-            <img src="/users/charlotte.svg" alt="Charlotte" className="w-1/3" />
+            <img
+              src="/users/charlotte.svg"
+              alt="Charlotte"
+              className="w-3/4 md:w-1/3"
+            />
             <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
               <h2 className="text-4xl text-[#FA4FAA]">Social Integrations</h2>
               <span>
@@ -132,10 +144,14 @@ export default function Home() {
                 self-custodial wallet using my BOLT 12 offer.
               </span>
             </div>
-            <img src="/users/danh.svg" alt="Danh" className="w-1/3" />
+            <img src="/users/danh.svg" alt="Danh" className="w-3/4 md:w-1/3" />
           </div>
           <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
-            <img src="/users/elaheh.svg" alt="Elaheh" className="w-1/3" />
+            <img
+              src="/users/elaheh.svg"
+              alt="Elaheh"
+              className="w-3/4 md:w-1/3"
+            />
             <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
               <h2 className="text-4xl text-[#2ACA4D]">Social Integrations</h2>
               <span>
