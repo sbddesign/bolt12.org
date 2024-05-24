@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image"
 import {Inter, Pacifico} from "next/font/google"
 import {MenuIcon} from "@bitcoin-design/bitcoin-icons-react/filled"
+import React from "react"
 
 const inter = Inter({subsets: ["latin"]})
 const pacifico = Pacifico({subsets: ["latin"], weight: '400'})
@@ -24,23 +26,28 @@ const headerLinks = [
 ]
 
 export default function Home() {
+  const [showNav, setShowNav] = React.useState(false)
+
   return (
     <>
-      <header className="p-4">
-        <Image src={'/bolt12-logo.svg'} alt="BOLT 12" width={124} height={69} className="w-[72px] lg:w-full" />
-        <MenuIcon className="w-6 h-6" />
-        <nav>
-          <ul className="bg-[#37869F]">
+      <div className={"fixed bg-slate-200/75 w-full h-full z-40 transition-opacity duration-500" + (showNav ? " animate-menu-overlay-fade" : " hidden")} onClick={()=>setShowNav(!showNav)}></div>
+      <header className="fixed w-full z-50 md:flex md:flex-row md:justify-between md:border-b md:border-b-slate-300">
+        <div className="flex flex-row justify-between items-center p-4 bg-white relative z-40 border-b border-b-slate-300 md:border-0 lg:px-6">
+          <Image src={'/bolt12-logo.svg'} alt="BOLT 12" width={124} height={69} className="w-[72px] md:w-[144px]" />
+          <MenuIcon className="w-8 h-8 md:hidden" onClick={()=>setShowNav(!showNav)} />
+        </div>
+        <nav className={"w-full transition-all md:block" + (showNav ? " block animate-menu-slide" : " hidden")}>
+          <ul className="bg-[#37869F] w-full md:flex md:flex-row md:bg-white md:items-center md:justify-end md:h-full">
             {headerLinks.map((link, index) => (
-              <li key={index} className="block">
-                <a href={link.href} className="text-[#FFF963] font-headings text-3xl p-4 border-b border-[#4998B1] block">{link.text}</a>
+              <li key={index} className="block md:h-full">
+                <a href={link.href} className="text-[#FFF963] font-headings text-3xl p-4 border-b border-[#4998B1] block w-full md:text-[#37869F] md:text-2xl md:font-normal md:border-0 md:h-full md:flex md:items-center lg:p-6">{link.text}</a>
               </li>
             ))}
           </ul>
         </nav>
       </header>
-      <main className="flex min-h-screen flex-col items-center">
-        <div className="h-screen flex items-center flex-col gap-8 p-4 py-12 lg:px-12">
+      <main className="flex min-h-screen flex-col items-center pt-20">
+        <div className="md:h-screen flex items-center justify-center flex-col gap-8 p-4 py-12 lg:px-12">
           {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
           <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
             <Image src={"/hero/bolt-12-hero-text-shadow.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float" />
@@ -50,16 +57,16 @@ export default function Home() {
           </div>
           
           <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
-            <span className="text-[#2BAFF6] font-headings font-regular">
+            <span className="text-[#685588] font-headings font-regular">
               Ever wondered what it’s like to live in the futuristic utopia of
               BOLT 12?
             </span>
-            <span className="text-[#E64500] font-display">Let’s take a look!</span>
+            <span className="text-[#685588] font-display">Let’s take a look!</span>
           </div>
         </div>
         {/* User Stories */}
         <div className="flex flex-col items-center w-full mt-24 gap-20">
-          <div className="flex justify-start items-center w-full gap-20">
+          <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
             <img src="/users/alice.svg" alt="Alice" className="w-1/3" />
             <div className="flex flex-col gap-4 w-2/5">
               <h2 className="text-4xl text-[#6D4FA6]">
@@ -74,7 +81,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex justify-end items-center w-full gap-20">
+          <div className="flex flex-col md:flex-row justify-end items-center w-full gap-20">
             <div className="flex flex-col gap-4 w-2/5">
               <h2 className="text-4xl text-[#FFA100]">Receiver Privacy</h2>
               <span>
@@ -87,7 +94,7 @@ export default function Home() {
             </div>
             <img src="/users/brijesh.svg" alt="Brijesh" className="w-1/3" />
           </div>
-          <div className="flex justify-start items-center w-full gap-20">
+          <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
             <img src="/users/charlotte.svg" alt="Charlotte" className="w-1/3" />
             <div className="flex flex-col gap-4 w-2/5">
               <h2 className="text-4xl text-[#FA4FAA]">Social Integrations</h2>
@@ -100,7 +107,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex justify-end items-center w-full gap-20">
+          <div className="flex flex-col md:flex-row justify-end items-center w-full gap-20">
             <div className="flex flex-col gap-4 w-2/5">
               <h2 className="text-4xl text-[#00C4D5]">Auto-withdrawals</h2>
               <span>
@@ -113,7 +120,7 @@ export default function Home() {
             </div>
             <img src="/users/danh.svg" alt="Danh" className="w-1/3" />
           </div>
-          <div className="flex justify-start items-center w-full gap-20">
+          <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
             <img src="/users/elaheh.svg" alt="Elaheh" className="w-1/3" />
             <div className="flex flex-col gap-4 w-2/5">
               <h2 className="text-4xl text-[#2ACA4D]">Social Integrations</h2>
