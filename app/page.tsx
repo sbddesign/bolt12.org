@@ -1,14 +1,9 @@
 "use client";
 import Image from "next/image"
-import {Inter, Pacifico} from "next/font/google"
-import {MenuIcon} from "@bitcoin-design/bitcoin-icons-react/filled"
 import React from "react"
 import Header from "@/components/Header";
 import UserProfile from "@/features/UserProfile";
 import type {UserProfileProps} from "@/features/UserProfile";
-
-const inter = Inter({subsets: ["latin"]})
-const pacifico = Pacifico({subsets: ["latin"], weight: '400'})
 
 export default function Home() {
     const nodeImagePaths = [
@@ -94,7 +89,7 @@ export default function Home() {
           </div>
         </div>
         {/* User Stories */}
-        <div className="flex flex-col items-center w-full mt-24 gap-20 p-8">
+        <div className="flex flex-col items-center w-full my-24 gap-20 p-8 lg:gap-32">
           {userProfiles.map((profile, index) => (
             <UserProfile key={index} {...profile} config={index % 2 === 0 ? "even" : "odd"} />
           ))}
