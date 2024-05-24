@@ -150,7 +150,8 @@ export default function Home() {
         </div>
 
         {/* How to Integrate */}
-        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full pb-24">
+        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full ">
+          <img src="/curve.svg" alt="Curve" className="w-full" />
           <div className="flex flex-col gap-20 w-10/12 mt-12 justify-center">
             <div className="flex md:flex-row bg-red md:justify-between items-center flex-col gap-10">
               <div className="bg-[#37869F] md:w-[454px] w-full h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
@@ -179,6 +180,11 @@ export default function Home() {
               ))}
             </div>
           </div>
+          <img
+            src="/curve.svg"
+            alt="Curve"
+            className="w-full transform scale-x-[-1] rotate-180"
+          />
         </div>
       </main>
     </>
