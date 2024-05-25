@@ -47,10 +47,10 @@ export default function Home() {
           
           <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
             <span className="text-[#685588] font-headings font-regular">
-              Ever wondered what it’s like to live in the futuristic utopia of
+              Ever wondered what it&rsquo;s like to live in the futuristic utopia of
               BOLT 12?
             </span>
-            <span className="text-[#685588] font-display">Let’s take a look!</span>
+            <span className="text-[#685588] font-display">Let&rsquo;s take a look!</span>
           </div>
         </div>
         {/* User Stories */}
@@ -77,7 +77,7 @@ export default function Home() {
                 As a shadowy super coder that makes contributions to Bitcoin Core,
                 I needed a way to accept donations for my work in a way that helps
                 me preserve my anonymity and separate my various digital
-                identities. BOLT 12’s route blinding helps me accept payments on
+                identities. BOLT 12&rsquo;s route blinding helps me accept payments on
                 the down-low!
               </span>
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
               <span>
                 As a content creator on Nostr, I needed a way to accept zaps on my
                 artwork that was self-custodial. I was able to easily publish my
-                bitcoin wallet’s payment code to my Nostr profile and receive zaps
+                bitcoin wallet&rsquo;s payment code to my Nostr profile and receive zaps
                 without any custodians or middle-men. BOLT 12 is a great way to
                 support the arts!
               </span>
@@ -101,8 +101,8 @@ export default function Home() {
               <h2 className="text-4xl text-[#00C4D5]">Auto-withdrawals</h2>
               <span>
                 I heard some guys talking about bitcoin on XNBC Squawk Cube, so I
-                decided to buy it. Then I learned that I shouldn’t trust exchanges
-                and it’s better to self-custody bitcoin. So, I setup my exchange
+                decided to buy it. Then I learned that I shouldn&rsquo;t trust exchanges
+                and it&rsquo;s better to self-custody bitcoin. So, I setup my exchange
                 account to auto-deposit my bitcoin to my self-custodial wallet
                 using my BOLT 12 offer.
               </span>
@@ -154,6 +154,10 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div id="get-involved">
+          TODO: Replace this with the footer in Brandon&rsquo;s PR
         </div>
       </main>
     </>
