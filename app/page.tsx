@@ -155,6 +155,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div id="get-involved">
+          TODO: Replace this with the footer in Brandon's PR
+        </div>
       </main>
     </>
   );
