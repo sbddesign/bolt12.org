@@ -1,12 +1,10 @@
 "use client";
-import Image from "next/image";
-import { Inter, Pacifico } from "next/font/google";
-import { MenuIcon } from "@bitcoin-design/bitcoin-icons-react/filled";
-import React from "react";
+import Image from "next/image"
+import React from "react"
 import Header from "@/components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
-const pacifico = Pacifico({ subsets: ["latin"], weight: "400" });
+import UserProfile from "@/features/UserProfile";
+import type {UserProfileProps} from "@/features/UserProfile";
+import { MenuIcon } from "@bitcoin-design/bitcoin-icons-react/filled";
 
 export default function Home() {
   const nodeImagePaths = [
@@ -31,6 +29,44 @@ export default function Home() {
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
   ];
+
+    const userProfiles:UserProfileProps[] = [
+      {
+        userName: "Alice",
+        featureName: "Reusable Payment Requests",
+        imageSrc:  "/users/alice@2x.png",
+        description:  "Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT11 invoices.",
+        link:  "/ux-design/#reusable-payment-requests"
+      },
+      {
+        userName: "Brijesh",
+        featureName: "Receiver Privacy",
+        imageSrc:  "/users/brijesh@2x.png",
+        description:  "As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT12’s route blinding, I can now accept payments discreetly and securely!",
+        link:  "/ux-design/#receiver-privacy"
+      },
+      {
+        userName: "Charlotte",
+        featureName: "Social Integration",
+        imageSrc:  "/users/charlotte@2x.png",
+        description:  "I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT12!",
+        link:  "/ux-design/#social-integration"
+      },
+      {
+        userName: "Danh",
+        featureName: "Auto-withdrawals",
+        imageSrc:  "/users/danh@2x.png",
+        description:  "After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.",
+        link:  "/ux-design/#auto-withdrawals"
+      },
+      {
+        userName: "Elaheh",
+        featureName: "Censorship Resistance",
+        imageSrc:  "/users/elaheh@2x.png",
+        description:  "As an activist living under an authoritarian robot regime, I needed a way to accept donations without payment services blocking my IP address. With onion messaging, my IP address remains hidden, ensuring I can receive support securely. Smash the autonomous patriarchy!",
+        link:  "/ux-design/#"
+      }
+    ]
 
   return (
     <>
@@ -79,90 +115,10 @@ export default function Home() {
           </div>
         </div>
         {/* User Stories */}
-        <div className="flex flex-col items-center w-full my-24 gap-20">
-          <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
-            <img
-              src="/users/alice.svg"
-              alt="Alice"
-              className="w-3/4 md:w-1/3"
-            />
-            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
-              <h2 className="text-4xl text-[#6D4FA6]">
-                Reusable Payment Requests
-              </h2>
-              <span>
-                Now that I can just slap my QR code on my tip jar, my band
-                finally can finally receive tips in bitcoin! Gone are the days
-                of making a new QR code for every fan that wants to tip us after
-                gig, and watching 75% of them lose interest after they saw how
-                long it took us to make BOLT11 invoices.
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col-reverse md:flex-row justify-end items-center w-full gap-20">
-            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
-              <h2 className="text-4xl text-[#FFA100]">Receiver Privacy</h2>
-              <span>
-                As a shadowy super coder that makes contributions to Bitcoin
-                Core, I needed a way to accept donations for my work in a way
-                that helps me preserve my anonymity and separate my various
-                digital identities. BOLT 12’s route blinding helps me accept
-                payments on the down-low!
-              </span>
-            </div>
-            <img
-              src="/users/brijesh.svg"
-              alt="Brijesh"
-              className="w-3/4 md:w-1/3"
-            />
-          </div>
-          <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
-            <img
-              src="/users/charlotte.svg"
-              alt="Charlotte"
-              className="w-3/4 md:w-1/3"
-            />
-            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
-              <h2 className="text-4xl text-[#FA4FAA]">Social Integrations</h2>
-              <span>
-                As a content creator on Nostr, I needed a way to accept zaps on
-                my artwork that was self-custodial. I was able to easily publish
-                my bitcoin wallet’s payment code to my Nostr profile and receive
-                zaps without any custodians or middle-men. BOLT 12 is a great
-                way to support the arts!
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col-reverse md:flex-row justify-end items-center w-full gap-20">
-            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
-              <h2 className="text-4xl text-[#00C4D5]">Auto-withdrawals</h2>
-              <span>
-                I heard some guys talking about bitcoin on XNBC Squawk Cube, so
-                I decided to buy it. Then I learned that I shouldn’t trust
-                exchanges and it’s better to self-custody bitcoin. So, I setup
-                my exchange account to auto-deposit my bitcoin to my
-                self-custodial wallet using my BOLT 12 offer.
-              </span>
-            </div>
-            <img src="/users/danh.svg" alt="Danh" className="w-3/4 md:w-1/3" />
-          </div>
-          <div className="flex flex-col md:flex-row justify-start items-center w-full gap-20">
-            <img
-              src="/users/elaheh.svg"
-              alt="Elaheh"
-              className="w-3/4 md:w-1/3"
-            />
-            <div className="flex flex-col gap-4 w-4/5 md:w-2/5">
-              <h2 className="text-4xl text-[#2ACA4D]">Social Integrations</h2>
-              <span>
-                I needed a way to accept donations for my work as an activist
-                living under an authoritarian regime. The problem is that many
-                payment services would block me based on my IP address. Now,
-                with onion messaging, nobody needs to know my IP address. Fight
-                the patriarchy!
-              </span>
-            </div>
-          </div>
+        <div className="flex flex-col items-center w-full my-24 gap-20 p-8 lg:gap-32">
+          {userProfiles.map((profile, index) => (
+            <UserProfile key={index} {...profile} config={index % 2 === 0 ? "even" : "odd"} />
+          ))}
         </div>
 
         {/* How to Integrate */}
