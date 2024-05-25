@@ -4,30 +4,31 @@ import React from "react"
 import Header from "@/components/Header";
 import UserProfile from "@/features/UserProfile";
 import type {UserProfileProps} from "@/features/UserProfile";
+import { MenuIcon } from "@bitcoin-design/bitcoin-icons-react/filled";
 
 export default function Home() {
-    const nodeImagePaths = [
-      {
-        path: "/nodes/lnd.png",
-        description:
-          "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
-      },
-      {
-        path: "/nodes/cln.png",
-        description:
-          "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
-      },
-      {
-        path: "/nodes/eclair.png",
-        description:
-          "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
-      },
-      {
-        path: "/nodes/ldk.png",
-        description:
-          "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
-      },
-    ];
+  const nodeImagePaths = [
+    {
+      path: "/nodes/lnd.png",
+      description:
+        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+    },
+    {
+      path: "/nodes/cln.png",
+      description:
+        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+    },
+    {
+      path: "/nodes/eclair.png",
+      description:
+        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+    },
+    {
+      path: "/nodes/ldk.png",
+      description:
+        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+    },
+  ];
 
     const userProfiles:UserProfileProps[] = [
       {
@@ -74,18 +75,43 @@ export default function Home() {
         <div className="md:h-screen flex items-center justify-center flex-col gap-8 p-4 py-12 lg:px-12">
           {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
           <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
-            <Image src={"/hero/bolt-12-hero-text-shadow.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float" />
-            <Image src={"/hero/bolt-12-hero-image.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-image-float" />
-            <Image src={"/hero/bolt-12-hero-text.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float" />
-            <Image src={"/hero/bolt-12-hero-logo.png"} alt="" width={1372} height={723} className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float" />
+            <Image
+              src={"/hero/bolt-12-hero-text-shadow.png"}
+              alt=""
+              width={1372}
+              height={723}
+              className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float"
+            />
+            <Image
+              src={"/hero/bolt-12-hero-image.png"}
+              alt=""
+              width={1372}
+              height={723}
+              className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-image-float"
+            />
+            <Image
+              src={"/hero/bolt-12-hero-text.png"}
+              alt=""
+              width={1372}
+              height={723}
+              className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float"
+            />
+            <Image
+              src={"/hero/bolt-12-hero-logo.png"}
+              alt=""
+              width={1372}
+              height={723}
+              className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float"
+            />
           </div>
-          
           <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
             <span className="text-[#685588] font-headings font-regular">
-              Ever wondered what it’s like to live in the futuristic utopia of
+              Ever wondered what it&rsquo;s like to live in the futuristic utopia of
               BOLT 12?
             </span>
-            <span className="text-[#685588] font-display">Let’s take a look!</span>
+            <span className="text-[#685588] font-display">
+              Let&rsquo;s take a look!
+            </span>
           </div>
         </div>
         {/* User Stories */}
@@ -96,10 +122,11 @@ export default function Home() {
         </div>
 
         {/* How to Integrate */}
-        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full pb-24">
+        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full ">
+          <img src="/curve.svg" alt="Curve" className="w-full" />
           <div className="flex flex-col gap-20 w-10/12 mt-12 justify-center">
-            <div className="flex justify-between">
-              <div className="bg-[#37869F] w-[454px] h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
+            <div className="flex md:flex-row bg-red md:justify-between items-center flex-col gap-10">
+              <div className="bg-[#37869F] md:w-[454px] w-full h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
                 <span className="text-[#FFF963] text-4xl font-headings">
                   How to Integrate BOLT12
                 </span>
@@ -112,7 +139,7 @@ export default function Home() {
               {nodeImagePaths.map(({ path, description }, index) => (
                 <div
                   key={index}
-                  className="flex gap-4 p-4 items-center w-[500px] h-[180px] bg-white  rounded-tl-[96px] rounded-tr-[8px] rounded-br-[96px] rounded-bl-[48px]"
+                  className="flex flex-col md:flex-row gap-4 p-4 items-center md:w-[500px] w-full h-full md:h-[180px] bg-white  rounded-tl-[96px] rounded-tr-[8px] rounded-br-[96px] rounded-bl-[48px]"
                 >
                   <Image
                     src={path}
@@ -124,6 +151,39 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+          <img
+            src="/curve.svg"
+            alt="Curve"
+            className="w-full transform scale-x-[-1] rotate-180"
+          />
+        </div>
+
+        <div className="flex flex-col items-center gap-10 my-40" id="get-involved">
+          <span className="text-[#685588] font-display text-6xl">
+            Get Involved
+          </span>
+          <span>
+            Interested in pushing the standard forward or learning how to adopt?
+            Here’s where the action happens:
+          </span>
+          <div className="flex gap-4">
+            <a
+              href="#"
+              className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px]"
+            >
+              <span className="text-[#FFF963] text-2xl font-display">
+                Discord
+              </span>
+            </a>
+            <a
+              href="#"
+              className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px]"
+            >
+              <span className="text-[#FFF963] text-2xl font-display">
+                Github PR
+              </span>
+            </a>
           </div>
         </div>
       </main>

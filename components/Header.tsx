@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { MenuIcon } from "@bitcoin-design/bitcoin-icons-react/filled"
 import React from "react"
+import Link from "next/link"
 
 interface HeaderProps {
     shy?: boolean;
@@ -28,15 +29,15 @@ export default function Header(props:HeaderProps){
           text: "User Stories"
         },
         {
-          href: "#",
+          href: "/developers",
           text: "Developer Docs"
         },
         {
-          href: "#",
+          href: "https://github.com/lightning/bolts/pull/798",
           text: "Read the Spec"
         },
         {
-          href: "#",
+          href: "/#get-involved",
           text: "Get Involved"
         },
     ]
@@ -53,7 +54,7 @@ export default function Header(props:HeaderProps){
                 <ul className="bg-[#37869F] w-full md:flex md:flex-row md:bg-white md:items-center md:justify-end md:h-full">
                     {headerLinks.map((link, index) => (
                     <li key={index} className="block md:h-full">
-                        <a href={link.href} className="text-[#FFF963] font-headings text-3xl p-4 border-b border-[#4998B1] block w-full md:text-[#37869F] md:text-2xl md:font-normal md:border-0 md:h-full md:flex md:items-center lg:p-6">{link.text}</a>
+                        <Link href={link.href} className="text-[#FFF963] font-headings text-3xl p-4 border-b border-[#4998B1] block w-full md:text-[#37869F] md:text-2xl md:font-normal md:border-0 md:h-full md:flex md:items-center lg:p-6">{link.text}</Link>
                     </li>
                     ))}
                 </ul>
