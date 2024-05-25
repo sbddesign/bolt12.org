@@ -70,11 +70,11 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
             <span className="text-[#685588] font-headings font-regular">
-              Ever wondered what it’s like to live in the futuristic utopia of
+              Ever wondered what it&rsquo;s like to live in the futuristic utopia of
               BOLT 12?
             </span>
             <span className="text-[#685588] font-display">
-              Let’s take a look!
+              Let&rsquo;s take a look!
             </span>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col items-center gap-10 my-40">
+        <div className="flex flex-col items-center gap-10 my-40" id="get-involved">
           <span className="text-[#685588] font-display text-6xl">
             Get Involved
           </span>
