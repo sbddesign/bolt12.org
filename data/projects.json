@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Zeus",
+        "description": "Wallet decentralized, hard fork proof-of-work full node public key consensus, block reward? Transaction Satoshi Nakamoto consensus, mining timestamp server double-spend problem, outputs wallet.",
+        "image": "projects/zeus.png",
+        "website": "https://zeusln.com/",
+        "code": "https://github.com/ZeusLN/zeus"
+    },
+    {
+        "name": "Human Readable Address",
+        "description": "Wallet decentralized, hard fork proof-of-work full node public key consensus, block reward? Transaction Satoshi Nakamoto consensus, mining timestamp server double-spend problem, outputs wallet.",
+        "image": "projects/human-readable-address.png",
+        "website": "https://github.com/bitcoin/bips/pull/1551/files",
+        "code": "https://github.com/bitcoin/bips/pull/1551/files"
+    },
+    {
+        "name": "Ride the Lightning",
+        "description": "Wallet decentralized, hard fork proof-of-work full node public key consensus, block reward? Transaction Satoshi Nakamoto consensus, mining timestamp server double-spend problem, outputs wallet.",
+        "image": "projects/ride-the-lightning.png",
+        "website": "https://www.ridethelightning.info/",
+        "code": "https://github.com/Ride-The-Lightning/RTL/discussions"
+    },
+    {
+        "name": "Twelve Cash",
+        "description": "Wallet decentralized, hard fork proof-of-work full node public key consensus, block reward? Transaction Satoshi Nakamoto consensus, mining timestamp server double-spend problem, outputs wallet.",
+        "image": "projects/twelve-cash.png",
+        "website": "https://twelve.cash/",
+        "code": "https://github.com/ATLBitLab/twelvecash"
+    },
+    {
+        "name": "Clams",
+        "description": "Wallet decentralized, hard fork proof-of-work full node public key consensus, block reward? Transaction Satoshi Nakamoto consensus, mining timestamp server double-spend problem, outputs wallet.",
+        "image": "projects/clams.png",
+        "website": "https://clams.tech/",
+        "code": "https://github.com/clams-tech/Remote"
+    },
+    {
+        "name": "ROYGBIV",
+        "description": "Wallet decentralized, hard fork proof-of-work full node public key consensus, block reward? Transaction Satoshi Nakamoto consensus, mining timestamp server double-spend problem, outputs wallet.",
+        "image": "projects/roygbiv.png",
+        "website": "https://www.roygbiv.guide/",
+        "code": "https://github.com/gudnuf/bolt12-prism"
+    }
+]

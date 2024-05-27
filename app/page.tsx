@@ -4,7 +4,9 @@ import React from "react"
 import Header from "@/components/Header";
 import UserProfile from "@/features/UserProfile";
 import type {UserProfileProps} from "@/features/UserProfile";
-import { MenuIcon } from "@bitcoin-design/bitcoin-icons-react/filled";
+import projectsData from "@/data/projects.json"
+import GlobeAltIcon from "@heroicons/react/24/solid/GlobeAltIcon";
+import CommandLineIcon from "@heroicons/react/24/solid/CommandLineIcon";
 
 export default function Home() {
   const nodeImagePaths = [
@@ -30,43 +32,53 @@ export default function Home() {
     },
   ];
 
-    const userProfiles:UserProfileProps[] = [
-      {
-        userName: "Alice",
-        featureName: "Reusable Payment Requests",
-        imageSrc:  "/users/alice@2x.png",
-        description:  "Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT11 invoices.",
-        link:  "/ux-design/#reusable-payment-requests"
-      },
-      {
-        userName: "Brijesh",
-        featureName: "Receiver Privacy",
-        imageSrc:  "/users/brijesh@2x.png",
-        description:  "As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT12’s route blinding, I can now accept payments discreetly and securely!",
-        link:  "/ux-design/#receiver-privacy"
-      },
-      {
-        userName: "Charlotte",
-        featureName: "Social Integration",
-        imageSrc:  "/users/charlotte@2x.png",
-        description:  "I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT12!",
-        link:  "/ux-design/#social-integration"
-      },
-      {
-        userName: "Danh",
-        featureName: "Auto-withdrawals",
-        imageSrc:  "/users/danh@2x.png",
-        description:  "After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.",
-        link:  "/ux-design/#auto-withdrawals"
-      },
-      {
-        userName: "Elaheh",
-        featureName: "Censorship Resistance",
-        imageSrc:  "/users/elaheh@2x.png",
-        description:  "As an activist living under an authoritarian robot regime, I needed a way to accept donations without payment services blocking my IP address. With onion messaging, my IP address remains hidden, ensuring I can receive support securely. Smash the autonomous patriarchy!",
-        link:  "/ux-design/#"
-      }
-    ]
+  const userProfiles:UserProfileProps[] = [
+    {
+      userName: "Alice",
+      featureName: "Reusable Payment Requests",
+      imageSrc:  "/users/alice@2x.png",
+      description:  "Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT11 invoices.",
+      link:  "/ux-design/#reusable-payment-requests"
+    },
+    {
+      userName: "Brijesh",
+      featureName: "Receiver Privacy",
+      imageSrc:  "/users/brijesh@2x.png",
+      description:  "As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT12’s route blinding, I can now accept payments discreetly and securely!",
+      link:  "/ux-design/#receiver-privacy"
+    },
+    {
+      userName: "Charlotte",
+      featureName: "Social Integration",
+      imageSrc:  "/users/charlotte@2x.png",
+      description:  "I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT12!",
+      link:  "/ux-design/#social-integration"
+    },
+    {
+      userName: "Danh",
+      featureName: "Auto-withdrawals",
+      imageSrc:  "/users/danh@2x.png",
+      description:  "After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.",
+      link:  "/ux-design/#auto-withdrawals"
+    },
+    {
+      userName: "Elaheh",
+      featureName: "Censorship Resistance",
+      imageSrc:  "/users/elaheh@2x.png",
+      description:  "As an activist living under an authoritarian robot regime, I needed a way to accept donations without payment services blocking my IP address. With onion messaging, my IP address remains hidden, ensuring I can receive support securely. Smash the autonomous patriarchy!",
+      link:  "/ux-design/#"
+    }
+  ]
+
+  type project = {
+    name: string,
+    description: string,
+    image: string,
+    website?: string,
+    code?: string
+  }
+
+  const projects:project[] = projectsData
 
   return (
     <>
@@ -159,6 +171,40 @@ export default function Home() {
           />
         </div>
 
+        {/* Projects - BOLT 12 in Actions */}
+        <div className="w-full flex flex-col gap-12 py-16 items-center justify-center">
+          <p className="font-headings text-b12-purple text-center mx-auto text-5xl">
+            Now let’s see BOLT 12 <span className="font-display block text-6xl">in action!</span>
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 gap-x-12 gap-y-16 max-w-7xl">
+            {projects.map((project, index) => (
+              <>
+                <div className="flex flex-col gap-9 w-full min-w-[200px] max-w-[420px] basis-1" key={index}>
+                  <Image src={"/" + project.image} alt="" width={148} height={148} className="rounded-tl-[48px] rounded-tr-[24px] rounded-br-[48px] rounded-bl-[24px] drop-shadow-hard-purple" />
+                  <div className="flex flex-col gap-3">
+                    <h3 className="text-b12-purple text-4xl font-headings">{project.name}</h3>
+                    <p>{project.description}</p>
+                    <div className="flex flex-row gap-4">
+                      {project.website ?
+                        <a href={project.website} className="flex flex-row-reverse items-center justify-center gap-1 text-b12-teal font-medium">
+                          Website <GlobeAltIcon className="h-6 w-6" />
+                        </a>
+                      : ""}
+
+                      {project.code ?
+                        <a href={project.code} className="flex flex-row-reverse items-center justify-center gap-1 text-b12-teal font-medium">
+                          Code <CommandLineIcon className="h-6 w-6" />
+                        </a>
+                      : ""}
+                    </div>
+                  </div> 
+                </div>
+              </>
+            ))}
+          </div>
+        </div>
+        
+        {/* Get Involved - Footer */}
         <div className="flex flex-col items-center gap-10 my-40" id="get-involved">
           <span className="text-[#685588] font-display text-6xl">
             Get Involved
