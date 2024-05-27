@@ -251,10 +251,10 @@ export default function Home() {
           <Image
             src={curve}
             alt=""
-            className="w-full h-auto relative z-50 translate-y-[-2px] mb-12"
+            className="w-full h-auto relative translate-y-[-2px] mb-12"
           />
           <div className="flex flex-col items-center gap-10 p-6">
-            <div className="flex flex-col items-center gap-10 bg-white relative z-50 max-w-lg p-8 rounded-tl-[24px] rounded-tr-[48px] rounded-br-[24px] rounded-bl-[48px] lg:rounded-tl-[48px] lg:rounded-tr-[96px] lg:rounded-br-[48px] lg:rounded-bl-[96px] lg:p-16 drop-shadow-2xl">
+            <div className="flex flex-col items-center gap-10 bg-white relative max-w-lg p-8 rounded-tl-[24px] rounded-tr-[48px] rounded-br-[24px] rounded-bl-[48px] lg:rounded-tl-[48px] lg:rounded-tr-[96px] lg:rounded-br-[48px] lg:rounded-bl-[96px] lg:p-16 drop-shadow-2xl">
               <h2 className="text-[#685588] font-display text-4xl md:text-6xl">
                 Get Involved
               </h2>
