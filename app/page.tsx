@@ -147,7 +147,13 @@ export default function Home() {
 
         {/* How to Integrate */}
         <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full ">
-          <img src="/curve.svg" alt="Curve" className="w-full" />
+          <Image
+            src="/curve.svg"
+            alt="Curve"
+            className="w-full"
+            width={1372}
+            height={723}
+          />
           <div className="flex flex-col md:gap-20 gap-5 w-10/12 mt-5 md:mt-12 justify-center">
             <div className="flex md:flex-row bg-red md:justify-between items-center flex-col md:gap-10 gap-5">
               <div className="bg-[#37869F] md:w-[454px] w-full h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
@@ -176,10 +182,12 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <img
+          <Image
             src="/curve.svg"
             alt="Curve"
             className="w-full transform scale-x-[-1] rotate-180"
+            width={1372}
+            height={723}
           />
         </div>
 
