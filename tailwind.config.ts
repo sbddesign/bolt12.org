@@ -53,7 +53,9 @@ const config: Config = {
       },
       colors: {
         'b12-teal': '#37869F',
-        'b12-purple': '#6D4FA6'
+        'b12-purple': '#6D4FA6',
+        'b12-yellow': '#FFF963',
+        'b12-red': '#FF2E00'
       },
       dropShadow: {
         'hard-purple': '8px 8px 0 #6D4FA6',

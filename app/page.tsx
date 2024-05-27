@@ -11,24 +11,28 @@ import spacescape from "@/public/spacescape.png";
 import curve from "@/public/curve.svg";
 
 export default function Home() {
-  const nodeImagePaths = [
+  const nodes = [
     {
       path: "/nodes/lnd.png",
+      name: "LND",
       description:
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
     {
       path: "/nodes/cln.png",
+      name: "Core Lightning",
       description:
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
     {
       path: "/nodes/eclair.png",
+      name: "Eclair",
       description:
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
     {
       path: "/nodes/ldk.png",
+      name: "LNDK",
       description:
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
@@ -138,23 +142,23 @@ export default function Home() {
 
         {/* How to Integrate */}
         <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full ">
-          <img src="/curve.svg" alt="Curve" className="w-full" />
-          <div className="flex flex-col gap-20 w-10/12 mt-12 justify-center">
-            <div className="flex md:flex-row bg-red md:justify-between items-center flex-col gap-10">
-              <div className="bg-[#37869F] md:w-[454px] w-full h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
-                <span className="text-[#FFF963] text-4xl font-headings">
-                  How to Integrate BOLT12
-                </span>
-              </div>
-              <div className="bg-[#FFF963] flex items-center justify-center w-[193px] h-[74px] rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] drop-shadow-lg">
-                <span className="text-[#FF2E00]">Read the Spec</span>
-              </div>
+          
+        <Image src={curve} alt="" className="w-full h-auto relative z-50 translate-y-[-2px] mb-12" />
+          <div className="flex flex-col gap-12 p-6 justify-center">
+            <div className="flex md:flex-row md:justify-between items-center flex-col gap-6">
+              <h2 className="text-b12-yellow text-3xl md:text-4xl font-headings p-6 bg-b12-teal w-full flex items-center justify-center rounded-tl-[24px] rounded-tr-[48px] rounded-br-[8px] rounded-bl-[48px] md:rounded-tl-[48px] md:rounded-tr-[96px] md:rounded-br-[8px] md:rounded-bl-[96px]">
+                How to Integrate BOLT12
+              </h2>
+              <a href="https://github.com/lightning/bolts/pull/798" className="bg-[#FFF963] flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] text-b12-red font-display text-2xl p-4 drop-shadow-hard-purple">
+                Read the Spec
+              </a>
             </div>
+
             <div className="gap-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
-              {nodeImagePaths.map(({ path, description }, index) => (
+              {nodes.map(({ path, name, description }, index) => (
                 <div
                   key={index}
-                  className="flex flex-col md:flex-row gap-4 p-4 items-center md:w-[500px] w-full h-full md:h-[180px] bg-white  rounded-tl-[96px] rounded-tr-[8px] rounded-br-[96px] rounded-bl-[48px]"
+                  className="flex flex-col md:flex-row gap-4 p-4 items-start md:w-[500px] w-full h-full md:h-[180px] bg-white rounded-tl-[48px] rounded-tr-[8px] rounded-br-[48px] rounded-bl-[24px] md:rounded-tl-[96px] md:rounded-tr-[8px] md:rounded-br-[96px] md:rounded-bl-[48px] drop-shadow-hard-purple"
                 >
                   <Image
                     src={path}
@@ -162,16 +166,13 @@ export default function Home() {
                     width={124}
                     height={124}
                   />
-                  <span>{description}</span>
+                  <h3 className="font-headings text-4xl text-b12-purple">{name}</h3>
+                  <p>{description}</p>
                 </div>
               ))}
             </div>
           </div>
-          <img
-            src="/curve.svg"
-            alt="Curve"
-            className="w-full transform scale-x-[-1] rotate-180"
-          />
+          <Image src={curve} alt="" className="w-full h-auto relative z-50 translate-y-[2px] transform scale-x-[-1] rotate-180" />
         </div>
 
         {/* Projects - BOLT 12 in Actions */}
