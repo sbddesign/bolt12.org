@@ -50,6 +50,13 @@ const config: Config = {
         "hero-logo-float": "hero-logo-float 6s ease-in-out infinite",
         "hero-text-float": "hero-text-float 6s ease-in-out infinite",
         "hero-image-float": "hero-image-float 6s ease-in-out infinite",
+      },
+      colors: {
+        'b12-teal': '#37869F',
+        'b12-purple': '#6D4FA6'
+      },
+      dropShadow: {
+        'hard-purple': '8px 8px 0 #6D4FA6',
       }
     },
   },
