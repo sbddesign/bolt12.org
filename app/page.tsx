@@ -172,11 +172,11 @@ export default function Home() {
         </div>
 
         {/* Projects - BOLT 12 in Actions */}
-        <div className="w-full flex flex-col gap-12 py-16">
+        <div className="w-full flex flex-col gap-12 py-16 items-center justify-center">
           <p className="font-headings text-b12-purple text-center mx-auto text-5xl">
             Now let’s see BOLT 12 <span className="font-display block text-6xl">in action!</span>
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 gap-x-12 gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 gap-x-12 gap-y-16 max-w-7xl">
             {projects.map((project, index) => (
               <>
                 <div className="flex flex-col gap-9 w-full min-w-[200px] max-w-[420px] basis-1" key={index}>
