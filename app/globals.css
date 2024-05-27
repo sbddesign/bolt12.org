@@ -5,3 +5,7 @@
 .shadow-footer {
   box-shadow: -6px 6px #4d4d58;
 }
+
+.bg-img-clip {
+  clip-path: inset(0 0 0 0);
+}

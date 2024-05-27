@@ -8,6 +8,7 @@ import projectsData from "@/data/projects.json"
 import GlobeAltIcon from "@heroicons/react/24/solid/GlobeAltIcon";
 import CommandLineIcon from "@heroicons/react/24/solid/CommandLineIcon";
 import spacescape from "@/public/spacescape.png";
+import blueprint from "@/public/blueprint.jpg";
 import curve from "@/public/curve.svg";
 
 export default function Home() {
@@ -89,8 +90,9 @@ export default function Home() {
   return (
     <>
       <Header shy />
-      <main className="flex min-h-screen flex-col items-center pt-20">
-        <div className="md:h-screen flex items-center justify-center flex-col gap-8 p-4 py-12 lg:px-12">
+      <main className="flex min-h-screen flex-col items-center">
+        {/* Hero */}
+        <div className="min-h-screen flex items-center justify-center flex-col gap-20 p-4 py-12 pt-60 lg:px-12 relative z-40 bg-white w-full">
           {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
           <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
             <Image
@@ -122,31 +124,33 @@ export default function Home() {
               className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float"
             />
           </div>
-          <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center">
-            <span className="text-[#685588] font-headings font-regular">
+          <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center max-w-sm">
+            <p className="text-[#685588] font-headings font-regular">
               Ever wondered what it&rsquo;s like to live in the futuristic utopia of
               BOLT 12?
-            </span>
-            <span className="text-[#685588] font-display">
+            </p>
+            <p className="text-[#685588] font-display">
               Let&rsquo;s take a look!
-            </span>
+            </p>
           </div>
         </div>
 
         {/* User Stories */}
-        <div className="flex flex-col items-center w-full my-24 gap-20 p-8 lg:gap-32">
+        <div className="flex flex-col items-center w-full py-24 gap-20 p-8 lg:gap-32 relative z-40 bg-white">
           {userProfiles.map((profile, index) => (
             <UserProfile key={index} {...profile} config={index % 2 === 0 ? "even" : "odd"} />
           ))}
         </div>
 
         {/* How to Integrate */}
-        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full ">
-          
-        <Image src={curve} alt="" className="w-full h-auto relative z-50 translate-y-[-2px] mb-12" />
-          <div className="flex flex-col gap-12 p-6 justify-center">
+        <div className="flex flex-col gap-8 justify-between items-center w-full h-auto relative ">
+          <div className="absolute w-full h-full bg-img-clip">
+            <Image src={blueprint} placeholder="blur" alt="" className="fixed z-[30] w-full h-full top-0 left-0 object-cover" />
+          </div>
+          <Image src={curve} alt="" className="w-full h-auto relative z-[30] translate-y-[-2px]" />
+          <div className="flex flex-col gap-12 p-6 justify-center z-30">
             <div className="flex md:flex-row md:justify-between items-center flex-col gap-6">
-              <h2 className="text-b12-yellow text-3xl md:text-4xl font-headings p-6 bg-b12-teal w-full flex items-center justify-center rounded-tl-[24px] rounded-tr-[48px] rounded-br-[8px] rounded-bl-[48px] md:rounded-tl-[48px] md:rounded-tr-[96px] md:rounded-br-[8px] md:rounded-bl-[96px]">
+              <h2 className="text-b12-yellow text-3xl md:text-4xl font-headings p-6 bg-b12-teal w-full flex items-center justify-center rounded-tl-[24px] rounded-tr-[48px] rounded-br-[8px] rounded-bl-[48px] md:rounded-tl-[48px] md:rounded-tr-[96px] md:rounded-br-[8px] md:rounded-bl-[96px] md:w-auto md:px-10">
                 How to Integrate BOLT12
               </h2>
               <a href="https://github.com/lightning/bolts/pull/798" className="bg-[#FFF963] flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] text-b12-red font-display text-2xl p-4 drop-shadow-hard-purple">
@@ -154,29 +158,32 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="gap-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+            <div className="gap-12 grid grid-cols-1 lg:grid-cols-2 justify-items-center">
               {nodes.map(({ path, name, description }, index) => (
                 <div
                   key={index}
-                  className="flex flex-col md:flex-row gap-4 p-4 items-start md:w-[500px] w-full h-full md:h-[180px] bg-white rounded-tl-[48px] rounded-tr-[8px] rounded-br-[48px] rounded-bl-[24px] md:rounded-tl-[96px] md:rounded-tr-[8px] md:rounded-br-[96px] md:rounded-bl-[48px] drop-shadow-hard-purple"
+                  className="gap-4 p-4 sm:p-6 items-start w-full bg-white rounded-tl-[48px] rounded-tr-[8px] rounded-br-[48px] rounded-bl-[24px] md:rounded-tl-[96px] md:rounded-tr-[8px] md:rounded-br-[96px] md:rounded-bl-[48px] drop-shadow-hard-purple max-w-[420px] md:max-w-2xl flex flex-col md:flex-row"
                 >
                   <Image
                     src={path}
                     alt={`Node ${index}`}
                     width={124}
                     height={124}
+                    className="md:row-span-2 grow-0"
                   />
-                  <h3 className="font-headings text-4xl text-b12-purple">{name}</h3>
-                  <p>{description}</p>
+                  <div className="flex flex-col gap-4">
+                    <h3 className="font-headings text-4xl text-b12-purple grow-1">{name}</h3>
+                    <p className="grow-1">{description}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-          <Image src={curve} alt="" className="w-full h-auto relative z-50 translate-y-[2px] transform scale-x-[-1] rotate-180" />
+          <Image src={curve} alt="" className="w-full h-auto relative z-30 translate-y-[2px] transform scale-x-[-1] rotate-180" />
         </div>
 
         {/* Projects - BOLT 12 in Actions */}
-        <div className="w-full flex flex-col gap-12 py-16 items-center justify-center">
+        <div className="w-full flex flex-col gap-12 py-16 items-center justify-center relative z-40 bg-white">
           <p className="font-headings text-b12-purple text-center mx-auto text-5xl">
             Now let’s see BOLT 12 <span className="font-display block text-6xl">in action!</span>
           </p>
@@ -209,11 +216,12 @@ export default function Home() {
         </div>
         
         {/* Get Involved - Footer */}
-        <div className="w-full relative pb-12" id="get-involved">
-          
-          <Image src={spacescape} placeholder="blur" alt="" width={1718} height={890} className="absolute top-0 left-0 w-full h-full object-cover" />
-          <Image src={curve} alt="" className="w-full h-auto relative z-50 translate-y-[-2px] mb-12" />
-          <div className="flex flex-col items-center gap-10 p-6">
+        <div className="w-full relative z-40 pb-12" id="get-involved">
+          <div className="absolute w-full h-full bg-img-clip">
+            <Image src={spacescape} placeholder="blur" alt="" width={1718} height={890} className="fixed top-0 left-0 w-full h-full object-cover z-20" />
+          </div>
+          <Image src={curve} alt="" className="w-full h-auto relative z-30 translate-y-[-2px] mb-12" />
+          <div className="flex flex-col items-center gap-10 p-6 z-40 relative">
             <div className="flex flex-col items-center gap-10 bg-white relative z-50 max-w-lg p-8 rounded-tl-[24px] rounded-tr-[48px] rounded-br-[24px] rounded-bl-[48px] lg:rounded-tl-[48px] lg:rounded-tr-[96px] lg:rounded-br-[48px] lg:rounded-bl-[96px] lg:p-16 drop-shadow-2xl">
               <h2 className="text-[#685588] font-display text-4xl md:text-6xl">
                 Get Involved
