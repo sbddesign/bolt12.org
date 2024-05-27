@@ -7,6 +7,8 @@ import type {UserProfileProps} from "@/features/UserProfile";
 import projectsData from "@/data/projects.json"
 import GlobeAltIcon from "@heroicons/react/24/solid/GlobeAltIcon";
 import CommandLineIcon from "@heroicons/react/24/solid/CommandLineIcon";
+import spacescape from "@/public/spacescape.png";
+import curve from "@/public/curve.svg";
 
 export default function Home() {
   const nodeImagePaths = [
@@ -126,6 +128,7 @@ export default function Home() {
             </span>
           </div>
         </div>
+
         {/* User Stories */}
         <div className="flex flex-col items-center w-full my-24 gap-20 p-8 lg:gap-32">
           {userProfiles.map((profile, index) => (
@@ -205,32 +208,40 @@ export default function Home() {
         </div>
         
         {/* Get Involved - Footer */}
-        <div className="flex flex-col items-center gap-10 my-40" id="get-involved">
-          <span className="text-[#685588] font-display text-6xl">
-            Get Involved
-          </span>
-          <span>
-            Interested in pushing the standard forward or learning how to adopt?
-            Here’s where the action happens:
-          </span>
-          <div className="flex gap-4">
-            <a
-              href="#"
-              className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px]"
-            >
-              <span className="text-[#FFF963] text-2xl font-display">
-                Discord
+        <div className="w-full relative pb-12" id="get-involved">
+          
+          <Image src={spacescape} placeholder="blur" alt="" width={1718} height={890} className="absolute top-0 left-0 w-full h-full object-cover" />
+          <Image src={curve} alt="" className="w-full h-auto relative z-50 translate-y-[-2px] mb-12" />
+          <div className="flex flex-col items-center gap-10 p-6">
+            <div className="flex flex-col items-center gap-10 bg-white relative z-50 max-w-lg p-8 rounded-tl-[24px] rounded-tr-[48px] rounded-br-[24px] rounded-bl-[48px] lg:rounded-tl-[48px] lg:rounded-tr-[96px] lg:rounded-br-[48px] lg:rounded-bl-[96px] lg:p-16 drop-shadow-2xl">
+              <h2 className="text-[#685588] font-display text-4xl md:text-6xl">
+                Get Involved
+              </h2>
+              <span>
+                Interested in pushing the standard forward or learning how to adopt?
+                Here’s where the action happens:
               </span>
-            </a>
-            <a
-              href="#"
-              className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px]"
-            >
-              <span className="text-[#FFF963] text-2xl font-display">
-                Github PR
-              </span>
-            </a>
+              <div className="flex flex-col gap-4 md:flex-row w-full">
+                <a
+                  href="https://discord.gg/Ay7UMqZu4m"
+                  className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] w-full"
+                >
+                  <span className="text-[#FFF963] text-2xl font-display">
+                    Discord
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/lightning/bolts/pull/798"
+                  className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] w-full"
+                >
+                  <span className="text-[#FFF963] text-2xl font-display">
+                    Github PR
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
+          
         </div>
       </main>
     </>
