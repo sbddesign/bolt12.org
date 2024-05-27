@@ -151,7 +151,7 @@ export default function Home() {
           <div className="flex flex-col md:gap-20 gap-5 w-10/12 mt-5 md:mt-12 justify-center">
             <div className="flex md:flex-row bg-red md:justify-between items-center flex-col md:gap-10 gap-5">
               <div className="bg-[#37869F] md:w-[454px] w-full h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
-                <span className="text-[#FFF963] text-4xl font-headings">
+                <span className="text-[#FFF963] text-3xl md:text-4xl font-headings">
                   How to Integrate BOLT12
                 </span>
               </div>
