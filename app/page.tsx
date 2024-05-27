@@ -148,8 +148,8 @@ export default function Home() {
         {/* How to Integrate */}
         <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full ">
           <img src="/curve.svg" alt="Curve" className="w-full" />
-          <div className="flex flex-col gap-5 w-10/12 mt-4 justify-center">
-            <div className="flex md:flex-row bg-red md:justify-between items-center flex-col gap-5">
+          <div className="flex flex-col md:gap-20 gap-5 w-10/12 mt-5 md:mt-12 justify-center">
+            <div className="flex md:flex-row bg-red md:justify-between items-center flex-col md:gap-10 gap-5">
               <div className="bg-[#37869F] md:w-[454px] w-full h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
                 <span className="text-[#FFF963] text-4xl font-headings">
                   How to Integrate BOLT12
@@ -159,7 +159,7 @@ export default function Home() {
                 <span className="text-[#FF2E00]">Read the Spec</span>
               </div>
             </div>
-            <div className="gap-5 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+            <div className="md:gap-20 gap-5 grid grid-cols-1 md:grid-cols-2 justify-items-center">
               {nodeImagePaths.map(({ path, description }, index) => (
                 <div
                   key={index}
