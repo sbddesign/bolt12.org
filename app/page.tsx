@@ -126,6 +126,7 @@ export default function Home() {
             </span>
           </div>
         </div>
+
         {/* User Stories */}
         <div className="flex flex-col items-center w-full my-24 gap-20 p-8 lg:gap-32">
           {userProfiles.map((profile, index) => (
@@ -215,7 +216,7 @@ export default function Home() {
           </span>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://discord.gg/Ay7UMqZu4m"
               className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px]"
             >
               <span className="text-[#FFF963] text-2xl font-display">
@@ -223,7 +224,7 @@ export default function Home() {
               </span>
             </a>
             <a
-              href="#"
+              href="https://github.com/lightning/bolts/pull/798"
               className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px]"
             >
               <span className="text-[#FFF963] text-2xl font-display">
