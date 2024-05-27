@@ -146,7 +146,7 @@ export default function Home() {
         </div>
 
         {/* How to Integrate */}
-        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full">
+        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-fixed bg-cover w-full">
           <Image
             src="/curve.svg"
             alt="Curve"
