@@ -10,30 +10,44 @@ import CommandLineIcon from "@heroicons/react/24/solid/CommandLineIcon";
 import spacescape from "@/public/spacescape.png";
 import blueprint from "@/public/blueprint.jpg";
 import curve from "@/public/curve.svg";
+import bolt12HeroTextShadow from "@/public/hero/bolt-12-hero-text-shadow.png";
+import bolt12HeroImage from "@/public/hero/bolt-12-hero-image.png";
+import bolt12HeroText from "@/public/hero/bolt-12-hero-text.png";
+import bolt12HeroLogo from "@/public/hero/bolt-12-hero-logo.png";
+import alice from "@/public/users/alice@2x.png"
+import brijesh from "@/public/users/brijesh@2x.png"
+import charlotte from "@/public/users/charlotte@2x.png"
+import danh from "@/public/users/danh@2x.png"
+import elaheh from "@/public/users/elaheh@2x.png"
+import lnd from "@/public/nodes/lnd.png"
+import cln from "@/public/nodes/cln.png"
+import eclair from "@/public/nodes/eclair.png"
+import ldk from "@/public/nodes/ldk.png"
+import type { StaticImageData } from "next/image";
 
 export default function Home() {
   const nodes = [
     {
-      path: "/nodes/lnd.png",
+      path: lnd,
       name: "LND",
       description:
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
     {
-      path: "/nodes/cln.png",
+      path: cln,
       name: "Core Lightning",
       description:
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
     {
-      path: "/nodes/eclair.png",
+      path: eclair,
       name: "Eclair",
       description:
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
     {
-      path: "/nodes/ldk.png",
-      name: "LNDK",
+      path: ldk,
+      name: "LDK",
       description:
         "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
     },
@@ -43,35 +57,35 @@ export default function Home() {
     {
       userName: "Alice",
       featureName: "Reusable Payment Requests",
-      imageSrc:  "/users/alice@2x.png",
+      imageSrc:  alice,
       description:  "Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT11 invoices.",
       link:  "/ux-design/#reusable-payment-requests"
     },
     {
       userName: "Brijesh",
       featureName: "Receiver Privacy",
-      imageSrc:  "/users/brijesh@2x.png",
+      imageSrc:  brijesh,
       description:  "As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT12’s route blinding, I can now accept payments discreetly and securely!",
       link:  "/ux-design/#receiver-privacy"
     },
     {
       userName: "Charlotte",
       featureName: "Social Integration",
-      imageSrc:  "/users/charlotte@2x.png",
+      imageSrc:  charlotte,
       description:  "I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT12!",
       link:  "/ux-design/#social-integration"
     },
     {
       userName: "Danh",
       featureName: "Auto-withdrawals",
-      imageSrc:  "/users/danh@2x.png",
+      imageSrc:  danh,
       description:  "After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.",
       link:  "/ux-design/#auto-withdrawals"
     },
     {
       userName: "Elaheh",
       featureName: "Censorship Resistance",
-      imageSrc:  "/users/elaheh@2x.png",
+      imageSrc:  elaheh,
       description:  "As an activist living under an authoritarian robot regime, I needed a way to accept donations without payment services blocking my IP address. With onion messaging, my IP address remains hidden, ensuring I can receive support securely. Smash the autonomous patriarchy!",
       link:  "/ux-design/#"
     }
@@ -96,31 +110,27 @@ export default function Home() {
           {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
           <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
             <Image
-              src={"/hero/bolt-12-hero-text-shadow.png"}
+              src={bolt12HeroTextShadow}
+              placeholder="blur"
               alt=""
-              width={1372}
-              height={723}
               className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float"
             />
             <Image
-              src={"/hero/bolt-12-hero-image.png"}
+              src={bolt12HeroImage}
+              placeholder="blur"
               alt=""
-              width={1372}
-              height={723}
               className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-image-float"
             />
             <Image
-              src={"/hero/bolt-12-hero-text.png"}
+              src={bolt12HeroText}
+              placeholder="blur"
               alt=""
-              width={1372}
-              height={723}
               className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float"
             />
             <Image
-              src={"/hero/bolt-12-hero-logo.png"}
+              src={bolt12HeroLogo}
+              placeholder="blur"
               alt=""
-              width={1372}
-              height={723}
               className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float"
             />
           </div>
@@ -166,10 +176,11 @@ export default function Home() {
                 >
                   <Image
                     src={path}
-                    alt={`Node ${index}`}
+                    placeholder="blur"
+                    alt=""
                     width={124}
                     height={124}
-                    className="md:row-span-2 grow-0"
+                    className=""
                   />
                   <div className="flex flex-col gap-4">
                     <h3 className="font-headings text-4xl text-b12-purple grow-1">{name}</h3>
