@@ -146,7 +146,7 @@ export default function Home() {
         </div>
 
         {/* How to Integrate */}
-        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full ">
+        <div className="flex flex-col justify-between items-center bg-[url('/blueprint.jpg')] bg-cover w-full">
           <Image
             src="/curve.svg"
             alt="Curve"
@@ -154,7 +154,7 @@ export default function Home() {
             width={1372}
             height={723}
           />
-          <div className="flex flex-col md:gap-20 gap-5 mx-4 mt-5 md:mt-12 justify-center">
+          <div className="flex flex-col md:gap-20 gap-5 mx-4 my-5 md:mt-12 justify-center">
             <div className="flex md:flex-row bg-red md:justify-between items-center flex-col md:gap-10 gap-5">
               <div className="bg-[#37869F] md:w-[454px] w-full h-[87px] flex items-center justify-center rounded-tl-[48px] rounded-tr-[96px] rounded-br-[8px] rounded-bl-[96px]">
                 <span className="text-[#FFF963] text-3xl md:text-4xl font-headings">
@@ -171,7 +171,7 @@ export default function Home() {
               {nodeImagePaths.map(({ path, description }, index) => (
                 <div
                   key={index}
-                  className="flex flex-col md:flex-row gap-4 p-4 items-center md:w-[500px] w-full h-full md:h-[180px] bg-white rounded-tl-[96px] rounded-tr-[8px] rounded-br-[96px] rounded-bl-[48px]"
+                  className="flex flex-col md:flex-row gap-4 p-4 items-center md:w-[500px] w-full h-full md:h-[180px] bg-white rounded-tl-[96px] rounded-tr-[8px] rounded-br-[48px] rounded-bl-[24px] md:rounded-br-[96px] md:rounded-bl-[48px]"
                 >
                   <Image
                     src={path}
