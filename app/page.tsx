@@ -162,7 +162,9 @@ export default function Home() {
                 </span>
               </div>
               <div className="bg-[#FFF963] flex items-center justify-center w-[193px] h-[74px] rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] drop-shadow-lg">
-                <span className="text-[#FF2E00]">Read the Spec</span>
+                <span className="text-[#FF2E00] font-display text-2xl">
+                  Read the Spec
+                </span>
               </div>
             </div>
             <div className="md:gap-20 gap-5 grid grid-cols-1 md:grid-cols-2 justify-items-center">
