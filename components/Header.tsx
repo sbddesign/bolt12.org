@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image"
 import { MenuIcon } from "@bitcoin-design/bitcoin-icons-react/filled"
 import React from "react"

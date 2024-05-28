@@ -1,5 +1,10 @@
-"use client";
 import Header from "@/components/Header";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+  title: "UX Design | BOLT 12",
+  description: "UX ideas for integrating BOLT 12 into your bitcoin lightning application."
+}
 
 export default function UxDesign(){
     return(
