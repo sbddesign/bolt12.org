@@ -31,7 +31,7 @@ export default function RootLayout({
         <meta property="og:image" content="/public/bolt12-logo.svg" />
         <meta
           property="og:description"
-          content="BOLT 12 implements offers, which improves Lightning QR codes by making them smaller, reusable, and able to send as well as receive money."
+          content="BOLT 12 is a protocol upgrade to the Lightning network that will enable re-usable payment requests, increased receiver privacy, and better censorship resistance. Come see the bitcoin of the future!"
         />
       </head>
       <body className={``}>{children}</body>
