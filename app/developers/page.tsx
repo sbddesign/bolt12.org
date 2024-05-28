@@ -1,5 +1,10 @@
-"use client";
 import Header from "@/components/Header";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+    title: "Developer Docs | BOLT 12",
+    description: "Developer docs for integrating BOLT 12 into your bitcoin lightning application."
+}
 
 export default function DeveloperDocs(){
     return(
