@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" prefix="og: https://ogp.me/ns#">
       <head>
-        <title>Bolt12</title>
+        <title>BOLT 12 | This is how we bitcoin in the future!</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -25,14 +25,25 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://use.typekit.net/pqu3bot.css"
         ></link>
-        <meta property="og:title" content="BOLT 12" />
+        <meta property="og:title" content="BOLT 12 | This is how we bitcoin in the future!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bolt12.org" />
-        <meta property="og:image" content="/public/bolt12-logo.svg" />
+        <meta property="og:image" content="https://bolt12.org/bolt-12-poster.jpg" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta property="og:image:alt" content="A futuristic city in space with the BOLT 12 logo" />
         <meta
           property="og:description"
           content="BOLT 12 is a protocol upgrade to the Lightning network that will enable re-usable payment requests, increased receiver privacy, and better censorship resistance. Come see the bitcoin of the future!"
         />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:site" content="@Bolt12" /> */}
+        {/* <meta name="twitter:creator" content="@Bolt12" /> */}
+        <meta name="twitter:title" content="BOLT 12 | This is how we bitcoin in the future!" />
+        <meta name="twitter:description" content="BOLT 12 is a protocol upgrade to the Lightning network that will enable re-usable payment requests, increased receiver privacy, and better censorship resistance. Come see the bitcoin of the future!" />
+        <meta name="twitter:image" content="https://bolt12.org/bolt-12-poster.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={``}>{children}</body>
     </html>
