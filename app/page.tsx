@@ -22,7 +22,6 @@ import lnd from "@/public/nodes/lnd.png"
 import cln from "@/public/nodes/cln.png"
 import eclair from "@/public/nodes/eclair.png"
 import ldk from "@/public/nodes/ldk.png"
-import type { StaticImageData } from "next/image";
 import Link from "next/link";
 
 export default function Home() {
