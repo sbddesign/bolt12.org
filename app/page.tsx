@@ -23,6 +23,7 @@ import cln from "@/public/nodes/cln.png"
 import eclair from "@/public/nodes/eclair.png"
 import ldk from "@/public/nodes/ldk.png"
 import type { StaticImageData } from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const nodes = [
@@ -30,25 +31,29 @@ export default function Home() {
       path: lnd,
       name: "LND",
       description:
-        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+        "While LND does not support BOLT 12 at this moment, you can run LNDK along-side your LND to bhegin trying out BOLT 12.",
+      anchor: "lnd"
     },
     {
       path: cln,
       name: "Core Lightning",
       description:
-        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+        "To use BOLT 12 with Core Lightning, you will need to run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag.",
+      anchor: "cln"
     },
     {
       path: eclair,
       name: "Eclair",
       description:
-        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+        "With your Eclair node, you can use the `payoffer` RPC command to pay an offer, or the Tip Jar plugin to generate an offer.",
+      anchor: "eclair"
     },
     {
       path: ldk,
-      name: "LDK",
+      name: "Lightning Dev Kit",
       description:
-        "Bitcoin ipsum dolor sit amet. Inputs hashrate hard fork digital signature UTXO timestamp server genesis block consensus! Hashrate transaction digital signature cryptocurrency double-spend problem nonce consensus!",
+        "LDK has methods to create offers and pay offers.",
+      anchor: "ldk"
     },
   ];
 
@@ -162,16 +167,17 @@ export default function Home() {
               <h2 className="text-b12-yellow text-3xl md:text-4xl font-headings p-6 bg-b12-teal w-full flex items-center justify-center rounded-tl-[24px] rounded-tr-[48px] rounded-br-[8px] rounded-bl-[48px] md:rounded-tl-[48px] md:rounded-tr-[96px] md:rounded-br-[8px] md:rounded-bl-[96px] md:w-auto md:px-10">
                 How to Integrate BOLT12
               </h2>
-              <a href="https://github.com/lightning/bolts/pull/798" className="bg-[#FFF963] flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] text-b12-red font-display text-2xl p-4 drop-shadow-hard-purple">
-                Read the Spec
+              <a href="/developers" className="bg-[#FFF963] flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] text-b12-red font-display text-2xl p-4 drop-shadow-hard-purple">
+                Developer Docs
               </a>
             </div>
 
             <div className="gap-12 grid grid-cols-1 lg:grid-cols-2 justify-items-center">
-              {nodes.map(({ path, name, description }, index) => (
-                <div
+              {nodes.map(({ path, name, description, anchor }, index) => (
+                <Link
+                  href={"/developers#" + anchor}
                   key={index}
-                  className="gap-4 p-4 sm:p-6 items-start w-full bg-white rounded-tl-[48px] rounded-tr-[8px] rounded-br-[48px] rounded-bl-[24px] md:rounded-tl-[96px] md:rounded-tr-[8px] md:rounded-br-[96px] md:rounded-bl-[48px] drop-shadow-hard-purple max-w-[420px] md:max-w-2xl flex flex-col md:flex-row"
+                  className="gap-4 p-4 sm:p-6 items-start w-full bg-white rounded-tl-[48px] rounded-tr-[8px] rounded-br-[48px] rounded-bl-[24px] md:rounded-tl-[96px] md:rounded-tr-[8px] md:rounded-br-[96px] md:rounded-bl-[48px] drop-shadow-hard-purple max-w-[420px] md:max-w-2xl flex flex-col md:flex-row hover:scale-105 transition-transform"
                 >
                   <Image
                     src={path}
@@ -185,7 +191,7 @@ export default function Home() {
                     <h3 className="font-headings text-4xl text-b12-purple grow-1">{name}</h3>
                     <p className="grow-1">{description}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

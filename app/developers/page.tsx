@@ -11,24 +11,39 @@ export default function DeveloperDocs(){
         <>
             <Header />
 
-            <div className="flex flex-col gap-4 p-8 max-w-xl pt-36">
-                <h1>Developer Docs</h1>
-                <p>
-                    Bitcoin ipsum dolor sit amet. Block reward transaction key pair SHA-256, digital signature peer-to-peer outputs mempool. Volatility stacking sats consensus public key genesis block miner nonce? Decentralized whitepaper sats address mempool to the moon full node decentralized! Sats block height, public key block height address deflationary monetary policy mining decentralized? Private key electronic cash pizza halvening.
-                </p>
-                <p>
-                    SHA-256, fee market hodl block reward outputs roller coaster volatility wallet mempool! Price action deflationary monetary policy hyperbitcoinization sats, peer-to-peer SHA-256 key pair! Money printer go brrrrr pizza roller coaster soft fork address Satoshi Nakamoto, price action, halvening! Soft fork, fee market space citadel double-spend problem.
-                </p>
-                <p>
-                    Pizza sats blockchain stacking sats, volatility key pair to the moon segwit. Wallet Merkle Tree genesis block, whitepaper, money printer go brrrrr outputs block reward segwit whitepaper! Outputs transaction, mining inputs mempool space citadel, price action transaction? Price action consensus mempool electronic cash I&rsquo;m in it for the tech, mining consensus digital signature? Mining, key pair, decentralized?
-                </p>
-                <p>
-                    Private key hodl address miner soft fork pizza blockchain when lambo! Digital signature Bitcoin Improvement Proposal transaction public key money printer go brrrrr satoshis peer-to-peer. Roller coaster digital signature address SHA-256, digital signature money printer go brrrrr decentralized, segwit. Mining.
-                </p>
-                <p>
-                    Digital signature, to the moon sats outputs peer-to-peer deflationary monetary policy cryptocurrency block reward. Satoshis SHA-256 outputs, digital signature halvening transaction freefall together when lambo blockchain? Public key cryptocurrency block reward block height volatility timestamp server, space citadel segwit.
-                </p>
-            </div>
+            <main className="w-full mx-auto p-8 pt-24 md:pt-36">
+                <article className="mx-auto max-w-4xl flex flex-col gap-8">
+                    <h1 className="font-headings text-5xl">Developer Docs</h1>
+
+                    <h2 id="cln">Core Lightning</h2>
+
+                    <p>
+                        To use BOLT 12 with Core Lightning, you will need to run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag. With your Eclair node, you can use the `payoffer` RPC command to pay an offer, or the Tip Jar plugin to generate an offer.LDK has methods to create offers and pay offers.
+                    </p>
+                    
+                    <p><a href="https://docs.corelightning.org/docs/configuration#experimental-options" target="_blank">This page from the Core Lightning docs</a> explains the feature flags a little more.</p>
+
+                    <hr />
+
+                    <h2 id="eclair">Eclair</h2>
+
+                    <p>With your Eclair node, you can use the `payoffer` RPC command to pay an offer, or the Tip Jar plugin to generate an offer. You can find some more details in the <a href="https://github.com/ACINQ/eclair/blob/master/docs/release-notes/eclair-v0.10.0.md" target="_blank">Eclair v0.10.0 Release notes</a>.</p>
+
+                    <hr />
+
+                    <h2 id="ldk">Lightning Dev Kit</h2>
+
+                    <p>LDK has methods to create offers and pay offers. You can learn more about these methdods in <a href="https://lightningdevkit.org/blog/bolt12-has-arrived/" target="_blank">this blog post</a>.</p>
+
+                    <hr />
+
+                    <h2 id="lnd">LND</h2>
+
+                    <p>
+                        While LND does not support BOLT 12 at this moment, you can <a href="https://github.com/lndk-org/lndk" target="_blank">run LNDK along-side your LND node</a> to begin trying out BOLT 12.
+                    </p>
+                </article>
+            </main>
         </>
     )
 }
