@@ -113,6 +113,8 @@ export default function Home() {
         <div className="min-h-screen flex items-center justify-center flex-col gap-20 p-4 py-12 pt-60 lg:px-12 relative z-40 bg-white w-full">
           {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
           <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
+            <h1 className="sr-only">Welcome to BOLT 12</h1>
+            <p className="sr-only">This is how we bitcoin in the future!</p>
             <Image
               src={bolt12HeroTextShadow}
               placeholder="blur"
@@ -122,7 +124,7 @@ export default function Home() {
             <Image
               src={bolt12HeroImage}
               placeholder="blur"
-              alt=""
+              alt="A futuristic city among the stars"
               className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-image-float"
             />
             <Image
