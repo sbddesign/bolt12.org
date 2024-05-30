@@ -1,5 +1,11 @@
 [
     {
+        "name": "Ocean",
+        "description": "Ocean Mining announced in April 2024 that miners can submit a BOLT 12 offer in order to receive their payouts from the pool over Lightning.\"Using BOLT12 also allows us to prove to the world that a payment was made, the size of the payment, the node to which it was paid, and that it was paid by us.\"",
+        "image": "projects/ocean.png",
+        "website": "https://ocean.xyz/"
+    },
+    {
         "name": "Zeus",
         "description": "Zeus, a lightning wallet for the gods, has an alpha release which integrates with Twelve Cash, allowing Core Lightning users to create their own BOLT 12 offer and create a @twelve.cash username.",
         "image": "projects/zeus.png",
@@ -12,13 +18,6 @@
         "image": "projects/human-readable-address.png",
         "website": "https://github.com/bitcoin/bips/pull/1551/files",
         "code": "https://github.com/bitcoin/bips/pull/1551/files"
-    },
-    {
-        "name": "Ride the Lightning",
-        "description": "RTL, a lightning node management UI, allows Core Lightning node oeprators to create BOLT 12 offers.",
-        "image": "projects/ride-the-lightning.png",
-        "website": "https://www.ridethelightning.info/",
-        "code": "https://github.com/Ride-The-Lightning/RTL/discussions"
     },
     {
         "name": "Twelve Cash",
@@ -40,5 +39,12 @@
         "image": "projects/roygbiv.png",
         "website": "https://www.roygbiv.guide/",
         "code": "https://github.com/gudnuf/bolt12-prism"
+    },
+    {
+        "name": "Ride the Lightning",
+        "description": "RTL, a lightning node management UI, allows Core Lightning node oeprators to create BOLT 12 offers.",
+        "image": "projects/ride-the-lightning.png",
+        "website": "https://www.ridethelightning.info/",
+        "code": "https://github.com/Ride-The-Lightning/RTL/discussions"
     }
 ]
