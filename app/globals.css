@@ -14,7 +14,12 @@ article a {
   @apply text-b12-purple underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-headings font-medium text-b12-purple;
 }
 
@@ -40,4 +45,8 @@ h5 {
 
 h6 {
   @apply text-lg;
+}
+
+html {
+  scroll-behavior: smooth;
 }
