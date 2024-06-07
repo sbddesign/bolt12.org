@@ -14,7 +14,12 @@ import brijeshNewPayCode from "@/public/ux/brijesh/NewPayCode.png";
 import brijeshNewPayCodePrivate from "@/public/ux/brijesh/NewPayCodePrivate.png";
 import brijeshPaymentCode from "@/public/ux/brijesh/PaymentCode.png";
 import brijeshBobWebsite from "@/public/ux/brijesh/BobWebsite.png";
-import charlotte from "@/public/ux/charlotte/MeetCharlotte-full.png";
+import charlotte from "@/public/ux/charlotte/MeetCharlotte.png";
+import charlotteAppStore from "@/public/ux/charlotte/AppStore.png";
+import charlottePaymentCode from "@/public/ux/charlotte/PaymentCode.png";
+import charlotteShareTray from "@/public/ux/charlotte/ShareTray.png";
+import charlotteNostrPrompt from "@/public/ux/charlotte/NostrPrompt.png";
+import charlotteNostrProfile from "@/public/ux/charlotte/NostrProfile.png";
 import danh from "@/public/ux/danh/MeetDanh-full.png";
 import elaheh from "@/public/ux/elaheh/MeetElaheh-full.png";
 
@@ -92,7 +97,32 @@ const stories:Stories = {
         {
             image: charlotte,
             alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+            caption: "Charlotte is a content creator who is very active on Nostr and wants a way that her audience and fans can tip her directly from a Nostr client."
+        },
+        {
+            image: charlotteAppStore,
+            alt: "",
+            caption: "Charlotte downloads a bitcoin wallet and gets setup."
+        },
+        {
+            image: charlottePaymentCode,
+            alt: "",
+            caption: "The wallet generates a payment code for her during onboarding. It notifies her that she can add this to her Nostr profile. She taps yes for this."
+        },
+        {
+            image: charlotteShareTray,
+            alt: "",
+            caption: "Wallet opens share tray (or similar menu) and she chooses her fave Nostr client from the list of apps."
+        },
+        {
+            image: charlotteNostrPrompt,
+            alt: "",
+            caption: "Switches over to the Nostr client --- client asks what she wants to do with the offer, she chooses “add to profile”."
+        },
+        {
+            image: charlotteNostrProfile,
+            alt: "",
+            caption: "Now her fans can send her zaps via BOLT12 over Nostr."
         }
     ],
     danh: [
