@@ -8,7 +8,12 @@ import aliceOnboarding from "@/public/ux/alice/Onboarding.png";
 import alicePaymentCode from "@/public/ux/alice/PaymentCode.png";
 import aliceSharing from "@/public/ux/alice/ShareTray.png";
 import aliceTipSign from "@/public/ux/alice/TipSign.png";
-import brijesh from "@/public/ux/brijesh/MeetBrijesh-full.png";
+import brijesh from "@/public/ux/brijesh/MeetBrijesh.png";
+import brijeshPayCodes from "@/public/ux/brijesh/PayCodes.png";
+import brijeshNewPayCode from "@/public/ux/brijesh/NewPayCode.png";
+import brijeshNewPayCodePrivate from "@/public/ux/brijesh/NewPayCodePrivate.png";
+import brijeshPaymentCode from "@/public/ux/brijesh/PaymentCode.png";
+import brijeshBobWebsite from "@/public/ux/brijesh/BobWebsite.png";
 import charlotte from "@/public/ux/charlotte/MeetCharlotte-full.png";
 import danh from "@/public/ux/danh/MeetDanh-full.png";
 import elaheh from "@/public/ux/elaheh/MeetElaheh-full.png";
@@ -54,9 +59,34 @@ const stories:Stories = {
     brijesh: [
         {
             image: brijesh,
-            alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
-        }
+            alt: "Brijesh in his secret trenchcoat",
+            caption: "Brijesh, known as Bob on Github, is a pseudonymous bitcoin FOSS dev and wants a way that people can support his work as privately as possible with BTC."
+        },
+        {
+            image: brijeshPayCodes,
+            alt: "UI displaying all of Brijesh's BOLT 12 offers",
+            caption: "Bob likes to separate out pay codes for different sectors of his life."
+        },
+        {
+            image: brijeshNewPayCode,
+            alt: "UI to make a new pay code (offer)",
+            caption: "Bob goes to create a new pay code specifically for bitcoin dev donations."
+        },
+        {
+            image: brijeshNewPayCodePrivate,
+            alt: "Ui to give the offer extra privacy features",
+            caption: "He turns on the extra privacy option, which adds 2 blinded paths with 2 hops each to the BOLT12 offer."
+        },
+        {
+            image: brijeshPaymentCode,
+            alt: "UI displaying the newly created offer",
+            caption: "Brijesh retrieves his payment code, which is a BIP21 URI with a BOLT 12 offer."
+        },
+        {
+            image: brijeshBobWebsite,
+            alt: "Brijesh's website, where he displays his offer under the pseudonymous name Bob",
+            caption: "A supporter goes to tip him on his website. They can tap a link to a BIP21 URI, scan the offer QR code, etc."
+        },
     ],
     charlotte: [
         {
