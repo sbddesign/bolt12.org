@@ -20,8 +20,9 @@ import charlottePaymentCode from "@/public/ux/charlotte/PaymentCode.png";
 import charlotteShareTray from "@/public/ux/charlotte/ShareTray.png";
 import charlotteNostrPrompt from "@/public/ux/charlotte/NostrPrompt.png";
 import charlotteNostrProfile from "@/public/ux/charlotte/NostrProfile.png";
-import danh from "@/public/ux/danh/MeetDanh-full.png";
-import elaheh from "@/public/ux/elaheh/MeetElaheh-full.png";
+import danh from "@/public/ux/danh/MeetDanh.png";
+import elaheh from "@/public/ux/elaheh/MeetElaheh.png";
+import placeholder from "@/public/ux/placeholder.png";
 
 export const metadata:Metadata = {
   title: "UX Design | BOLT 12",
@@ -129,15 +130,65 @@ const stories:Stories = {
         {
             image: danh,
             alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
-        }
+            caption: "Dan likes to invest, and he DCAs bitcoin everyday with a recurring buy on an exchange. He wants a way to sweep his BTC off the exchange automatically once a week."
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "Dan goes into the withdrawal options for his exchange account, and chooses a recurring withdrawal. Exchange asks him for a bitcoin address or a BOLT12 offer."
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "Dan goes to his bitcoin wallet..."
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "...copies the offer..."
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "...and pastes it into the exchange’s form. Then, he receives his payouts automatically once a week via async payments."
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "OR, in a world where async payments doesn’t exist yet, Dan receives a text from his exchange once a week asking him if he’d like to withdraw funds. He taps a link inside, which opens his bitcoin wallet, and then the exchange sends the payment."
+        },
     ],
     elaheh: [
         {
             image: elaheh,
             alt: "",
             caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
-        }
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+        },
+        {
+            image: placeholder,
+            alt: "",
+            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+        },
     ]
 }
 
