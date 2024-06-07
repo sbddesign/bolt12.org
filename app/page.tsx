@@ -90,7 +90,7 @@ export default function Home() {
       featureName: "Censorship Resistance",
       imageSrc:  elaheh,
       description:  "As an activist living under an authoritarian robot regime, I needed a way to accept donations without payment services blocking my IP address. With onion messaging, my IP address remains hidden, ensuring I can receive support securely. Smash the autonomous patriarchy!",
-      link:  "/ux-design/#"
+      link:  "/ux-design/#censorship-resistance"
     }
   ]
 
