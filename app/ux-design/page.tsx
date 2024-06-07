@@ -22,7 +22,7 @@ import charlotteNostrPrompt from "@/public/ux/charlotte/NostrPrompt.png";
 import charlotteNostrProfile from "@/public/ux/charlotte/NostrProfile.png";
 import danh from "@/public/ux/danh/MeetDanh.png";
 import elaheh from "@/public/ux/elaheh/MeetElaheh.png";
-import placeholder from "@/public/ux/placeholder.png";
+import placeholder from "@/public/ux/Placeholder.png";
 
 export const metadata:Metadata = {
   title: "UX Design | BOLT 12",
