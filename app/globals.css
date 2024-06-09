@@ -60,6 +60,10 @@ html::-webkit-scrollbar {
   width: 6px;
 }
 
+html::-webkit-scrollbar-track {
+  @apply bg-cyan-200;
+}
+
 html::-webkit-scrollbar-thumb {
   @apply from-cyan-200 to-blue-800 bg-gradient-to-b;
   border-radius: 0.5rem;
