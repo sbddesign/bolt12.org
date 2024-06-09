@@ -205,36 +205,61 @@ export default function UxDesign(){
                 <h1 className="font-bold">User Stories</h1>
                 <section className="py-12 border-b border-t border-gray-200 flex flex-col gap-6">
                     <h2 id="reusable-payment-requests">Reusable Payment Requests</h2>
+                    <blockquote>
+                        <p>
+                            Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT11 invoices.
+                        </p>
+                    </blockquote>
                     <p>
-                        Bitcoin ipsum dolor sit amet. Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats! Sats, public key private key wallet hashrate sats block height wallet timestamp server. Hashrate transaction mempool mining inputs whitepaper, bitcoin.
+                        In this scenario, Alice just needs a payment identifier that doesn't need to be changed or refreshed after each use. Her wallet creates an offer for her. She can then use the share tray and send it to a printer, then affix the printed QR code next to her band, in the same way that one might put a CashApp QR code on their tip jar.
                     </p>
                     <StoryRow story={stories.alice} />
                 </section>
                 <section className="py-12 border-b border-gray-200 flex flex-col gap-6">
                     <h2 id="receiver-privacy">Receiver Privacy</h2>
+                    <blockquote>
+                        <p>
+                        As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT12’s route blinding, I can now accept payments discreetly and securely!
+                        </p>
+                    </blockquote>
                     <p>
-                        Bitcoin ipsum dolor sit amet. Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats! Sats, public key private key wallet hashrate sats block height wallet timestamp server. Hashrate transaction mempool mining inputs whitepaper, bitcoin.
+                        In this scenario, the user needs some extra privacy. By using route blinding, which could be provided as an optional service by the LSP, the user can publish the offer into the world without revealing their node's pubkey. In theory, the user could create different offers for different sectors of their life, maintaing privacy and separation between these sectors.
                     </p>
                     <StoryRow story={stories.brijesh} />
                 </section>
                 <section className="py-12 border-b border-gray-200 flex flex-col gap-6">
                     <h2 id="social-integration">Social Integration</h2>
+                    <blockquote>
+                        <p>
+                        I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT12!
+                        </p>
+                    </blockquote>
                     <p>
-                        Bitcoin ipsum dolor sit amet. Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats! Sats, public key private key wallet hashrate sats block height wallet timestamp server. Hashrate transaction mempool mining inputs whitepaper, bitcoin.
+                        In this scenario, the user wants to receive self-custodial zaps on Nostr. While the current zaps implementation uses LNURL, there is not reason it could not be done with a BOLT 12 offer as well. For example, a BOLT 12 could be included in a `kind: 0` metadata note, AKA <em>the user's profile</em>. From there, Nostr clients aware of BOLT 12 could attempt to pay using the offer instead of the LNURL data in Charlotte's profile.
                     </p>
                     <StoryRow story={stories.charlotte} />
                 </section>
                 <section className="py-12 border-b border-gray-200 flex flex-col gap-6">
                     <h2 id="auto-withdrawals">Auto-withdrawals</h2>
+                    <blockquote>
+                        <p>
+                        After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.
+                        </p>
+                    </blockquote>
                     <p>
-                        Bitcoin ipsum dolor sit amet. Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats! Sats, public key private key wallet hashrate sats block height wallet timestamp server. Hashrate transaction mempool mining inputs whitepaper, bitcoin.
+                        Services such as <a href="https://www.swanbitcoin.com/" target="_blank">Swan</a> allow you to setup automated recurring withdrawals of your bitcoin balance to your own wallet. Currently, this is implemented with a static on-chain address or an xPub. Imagine an exchange adding BOLT 12 offers to the list of accepted formats. Then users could have their balance auto-withdrawn to their own wallet, instantly spendable on lightning and without the onchain fees.
                     </p>
                     <StoryRow story={stories.danh} />
                 </section>
                 <section className="py-12 border-b-0 border-gray-200 flex flex-col gap-6">
                     <h2 id="censorship-resistance">Censorship Resistance</h2>
+                    <blockquote>
+                        <p>
+                            As an activist living under an authoritarian robot regime, I needed a way to accept donations without payment services blocking my IP address. With onion messaging, my IP address remains hidden, ensuring I can receive support securely. Smash the autonomous patriarchy!
+                        </p>
+                    </blockquote>
                     <p>
-                        Bitcoin ipsum dolor sit amet. Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats! Sats, public key private key wallet hashrate sats block height wallet timestamp server. Hashrate transaction mempool mining inputs whitepaper, bitcoin.
+                        Bitcoin payment schemes that rely on HTTP can be censored. One advantage of BOLT 12 offers is that they do not rely on web servers or HTTP requests. Instead, they use onion messaging. Furthermore, the offer can use a <a href="https://github.com/bitcoin/bips/pull/1551" target="_blank">BIP 353 payment identifier</a>, which looks like an email address and is easy to remember and share.
                     </p>
                     <StoryRow story={stories.elaheh} />
                 </section>
