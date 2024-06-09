@@ -10,7 +10,7 @@
   clip-path: inset(0 0 0 0);
 }
 
-article a {
+article a, p a {
   @apply text-b12-purple underline;
 }
 
@@ -49,4 +49,8 @@ h6 {
 
 html {
   scroll-behavior: smooth;
+}
+
+blockquote {
+  @apply p-4 border-l-4 border-l-gray-300 italic;
 }
