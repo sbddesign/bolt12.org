@@ -139,18 +139,28 @@ export default function Home() {
               className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float"
             />
           </div>
-          <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center max-w-sm">
-            <p className="text-[#685588] font-headings font-regular">
-              Ever wondered what it&rsquo;s like to live in the futuristic utopia of
-              BOLT 12?
-            </p>
-            <p className="text-[#685588] font-display">
-              Let&rsquo;s take a look!
+        </div>
+
+        <div className="flex flex-col items-center justify-center gap-12 p-24 mx-auto max-w-4xl">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-center mx-auto text-5xl">What is BOLT 12?</h2>
+            <p className="text-lg">
+              BOLT 12 is a proposed upgrade to the Lightning network. For users, it can enable things like reusable payment requests, increased receiver privacy, and increased censorship resistance.
             </p>
           </div>
         </div>
 
         {/* User Stories */}
+
+        <div className="flex flex-col items-center text-center gap-8 text-xl md:text-2xl lg:text-4xl w-full justify-center max-w-lg">
+            <h2 className="">
+              Ever wondered what it&rsquo;s like to live in the futuristic utopia of BOLT 12?
+            </h2>
+            <p className="font-display text-b12-purple">
+              Let&rsquo;s take a look!
+            </p>
+          </div>
+
         <div className="flex flex-col items-center w-full py-24 gap-20 p-8 lg:gap-32 relative z-40 bg-white">
           {userProfiles.map((profile, index) => (
             <UserProfile key={index} {...profile} config={index % 2 === 0 ? "even" : "odd"} />
@@ -201,9 +211,9 @@ export default function Home() {
 
         {/* Projects - BOLT 12 in Actions */}
         <div className="w-full flex flex-col gap-12 py-16 items-center justify-center relative z-40 bg-white">
-          <p className="font-headings text-b12-purple text-center mx-auto text-5xl">
+          <h2 className="font-headings text-b12-purple text-center mx-auto text-5xl">
             Now let’s see BOLT 12 <span className="font-display block text-6xl">in action!</span>
-          </p>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 gap-x-12 gap-y-16 max-w-7xl">
             {projects.map((project, index) => (
               <>
