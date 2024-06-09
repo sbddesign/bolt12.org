@@ -211,7 +211,7 @@ export default function UxDesign(){
                         </p>
                     </blockquote>
                     <p>
-                        In this scenario, Alice just needs a payment identifier that doesn't need to be changed or refreshed after each use. Her wallet creates an offer for her. She can then use the share tray and send it to a printer, then affix the printed QR code next to her band, in the same way that one might put a CashApp QR code on their tip jar.
+                        In this scenario, Alice just needs a payment identifier that doesn&rsquo;t need to be changed or refreshed after each use. Her wallet creates an offer for her. She can then use the share tray and send it to a printer, then affix the printed QR code next to her band, in the same way that one might put a CashApp QR code on their tip jar.
                     </p>
                     <StoryRow story={stories.alice} />
                 </section>
@@ -223,7 +223,7 @@ export default function UxDesign(){
                         </p>
                     </blockquote>
                     <p>
-                        In this scenario, the user needs some extra privacy. By using route blinding, which could be provided as an optional service by the LSP, the user can publish the offer into the world without revealing their node's pubkey. In theory, the user could create different offers for different sectors of their life, maintaing privacy and separation between these sectors.
+                        In this scenario, the user needs some extra privacy. By using route blinding, which could be provided as an optional service by the LSP, the user can publish the offer into the world without revealing their node&rsquo;s pubkey. In theory, the user could create different offers for different sectors of their life, maintaing privacy and separation between these sectors.
                     </p>
                     <StoryRow story={stories.brijesh} />
                 </section>
@@ -235,7 +235,7 @@ export default function UxDesign(){
                         </p>
                     </blockquote>
                     <p>
-                        In this scenario, the user wants to receive self-custodial zaps on Nostr. While the current zaps implementation uses LNURL, there is not reason it could not be done with a BOLT 12 offer as well. For example, a BOLT 12 could be included in a `kind: 0` metadata note, AKA <em>the user's profile</em>. From there, Nostr clients aware of BOLT 12 could attempt to pay using the offer instead of the LNURL data in Charlotte's profile.
+                        In this scenario, the user wants to receive self-custodial zaps on Nostr. While the current zaps implementation uses LNURL, there is not reason it could not be done with a BOLT 12 offer as well. For example, a BOLT 12 could be included in a `kind: 0` metadata note, AKA <em>the user&rsquo;s profile</em>. From there, Nostr clients aware of BOLT 12 could attempt to pay using the offer instead of the LNURL data in Charlotte&rsquo;s profile.
                     </p>
                     <StoryRow story={stories.charlotte} />
                 </section>
@@ -243,7 +243,7 @@ export default function UxDesign(){
                     <h2 id="auto-withdrawals">Auto-withdrawals</h2>
                     <blockquote>
                         <p>
-                        After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.
+                        After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it&rsquo;s better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.
                         </p>
                     </blockquote>
                     <p>
