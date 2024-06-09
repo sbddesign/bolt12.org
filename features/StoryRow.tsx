@@ -23,7 +23,7 @@ export default function StoryRow(props:StoryRowProps) {
                 {props.story.map((story, index) => (
                     <div key={index} className="flex flex-col gap-4 w-[264px] min-w-[264px] px-4 py-8 first:pl-8 first:pr-0 first:mr-4 last:pr-8 last:pl-0 last:ml-4">
                         <Image src={story.image} alt={story.alt} width={250} placeholder="blur" className="border border-gray-200 rounded-2xl" />
-                        <p className="text-sm text-center">{story.caption}</p>
+                        <p className="text-xs text-center text-gray-500">{story.caption}</p>
                     </div>
                 ))}
             </div>

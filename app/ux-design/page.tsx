@@ -27,6 +27,10 @@ import danhSharing from "@/public/ux/danh/ShareTray.png";
 import danhBTCExchangeOffer from "@/public/ux/danh/BTCExchangeOffer.png";
 import danhTextMessages from "@/public/ux/danh/TextMessages.png";
 import elaheh from "@/public/ux/elaheh/MeetElaheh.png";
+import elahehNewUserName from "@/public/ux/elaheh/NewUserName.png";
+import elahehNewUserNameFilled from "@/public/ux/elaheh/NewUserNameFilled.png";
+import elahehPaymentCode from "@/public/ux/elaheh/PaymentCode.png";
+import elahehSocialPost from "@/public/ux/elaheh/SocialPost.png";
 import placeholder from "@/public/ux/Placeholder.png";
 
 export const metadata:Metadata = {
@@ -167,32 +171,27 @@ const stories:Stories = {
         {
             image: elaheh,
             alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+            caption: "Elaheh is an activist living under an authoritarian regime. She needs a way to accept donations to her cause in a way that is private, not censorable, and can easily be shared on social media or by word of mouth."
         },
         {
-            image: placeholder,
+            image: elahehNewUserName,
             alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+            caption: "Elaheh tries out her wallet's new username feature."
         },
         {
-            image: placeholder,
+            image: elahehNewUserNameFilled,
             alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+            caption: "She chooses a username. It looks just like an email address and is easy to remember."
         },
         {
-            image: placeholder,
+            image: elahehPaymentCode,
             alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+            caption: "Confirmation that the username is created. She can now copy+paste it, or simply tell people."
         },
         {
-            image: placeholder,
+            image: elahehSocialPost,
             alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
-        },
-        {
-            image: placeholder,
-            alt: "",
-            caption: "Mempool, public key cryptocurrency address, Bitcoin Improvement Proposal proof-of-work nonce, sats!"
+            caption: "It's now easy for social influencers like Charlotte to spread Elaheh's donation address with the world!"
         },
     ]
 }
