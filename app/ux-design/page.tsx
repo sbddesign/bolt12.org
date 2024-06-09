@@ -21,6 +21,11 @@ import charlotteShareTray from "@/public/ux/charlotte/ShareTray.png";
 import charlotteNostrPrompt from "@/public/ux/charlotte/NostrPrompt.png";
 import charlotteNostrProfile from "@/public/ux/charlotte/NostrProfile.png";
 import danh from "@/public/ux/danh/MeetDanh.png";
+import danhBTCExchange from "@/public/ux/danh/BTCExchange.png";
+import danhPaymentCode from "@/public/ux/danh/PaymentCode.png";
+import danhSharing from "@/public/ux/danh/ShareTray.png";
+import danhBTCExchangeOffer from "@/public/ux/danh/BTCExchangeOffer.png";
+import danhTextMessages from "@/public/ux/danh/TextMessages.png";
 import elaheh from "@/public/ux/elaheh/MeetElaheh.png";
 import placeholder from "@/public/ux/Placeholder.png";
 
@@ -133,27 +138,27 @@ const stories:Stories = {
             caption: "Dan likes to invest, and he DCAs bitcoin everyday with a recurring buy on an exchange. He wants a way to sweep his BTC off the exchange automatically once a week."
         },
         {
-            image: placeholder,
+            image: danhBTCExchange,
             alt: "",
             caption: "Dan goes into the withdrawal options for his exchange account, and chooses a recurring withdrawal. Exchange asks him for a bitcoin address or a BOLT12 offer."
         },
         {
-            image: placeholder,
+            image: danhPaymentCode,
             alt: "",
             caption: "Dan goes to his bitcoin wallet..."
         },
         {
-            image: placeholder,
+            image: danhSharing,
             alt: "",
             caption: "...copies the offer..."
         },
         {
-            image: placeholder,
+            image: danhBTCExchangeOffer,
             alt: "",
             caption: "...and pastes it into the exchange’s form. Then, he receives his payouts automatically once a week via async payments."
         },
         {
-            image: placeholder,
+            image: danhTextMessages,
             alt: "",
             caption: "OR, in a world where async payments doesn’t exist yet, Dan receives a text from his exchange once a week asking him if he’d like to withdraw funds. He taps a link inside, which opens his bitcoin wallet, and then the exchange sends the payment."
         },
