@@ -116,27 +116,23 @@ export default function Home() {
             <p className="sr-only">This is how we bitcoin in the future!</p>
             <Image
               src={bolt12HeroTextShadow}
-              placeholder="blur"
               alt=""
-              className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float"
+              className="w-[36%] max-w-[492px] absolute bottom-0 right-0 animate-hero-text-float"
             />
             <Image
               src={bolt12HeroImage}
-              placeholder="blur"
               alt="A futuristic city among the stars"
-              className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-image-float"
+              className="w-[90%] max-w-[1228px] absolute top-0 right-0 animate-hero-image-float"
             />
             <Image
               src={bolt12HeroText}
-              placeholder="blur"
               alt=""
-              className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-text-float"
+              className="w-[36%] max-w-[492px] absolute bottom-0 right-0 animate-hero-text-float"
             />
             <Image
               src={bolt12HeroLogo}
-              placeholder="blur"
               alt=""
-              className="w-full max-w-[1372px] absolute top-0 left-0 animate-hero-logo-float"
+              className="w-[46%] max-w-[643px] absolute top-0 left-0 animate-hero-logo-float"
             />
           </div>
         </div>
