@@ -10,7 +10,8 @@
   clip-path: inset(0 0 0 0);
 }
 
-article a, p a {
+article a,
+p a {
   @apply text-b12-purple underline;
 }
 
@@ -53,4 +54,13 @@ html {
 
 blockquote {
   @apply p-4 border-l-4 border-l-gray-300 italic;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-thumb {
+  @apply from-cyan-200 to-blue-800 bg-gradient-to-b;
+  border-radius: 0.5rem;
 }
