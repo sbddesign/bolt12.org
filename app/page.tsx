@@ -30,28 +30,28 @@ export default function Home() {
       path: lnd,
       name: "LND",
       description:
-        "While LND does not support BOLT 12 at this moment, you can run LNDK along-side your LND to bhegin trying out BOLT 12.",
+        "While LND does not yet support BOLT12, you can run LNDK alongside your LND node to start experimenting with BOLT12.",
       anchor: "lnd"
     },
     {
       path: cln,
       name: "Core Lightning",
       description:
-        "To use BOLT 12 with Core Lightning, you will need to run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag.",
+        "To use BOLT12 with Core Lightning, run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag.",
       anchor: "cln"
     },
     {
       path: eclair,
       name: "Eclair",
       description:
-        "With your Eclair node, you can use the `payoffer` RPC command to pay an offer, or the Tip Jar plugin to generate an offer.",
+        "With your Eclair node, you can use the `payoffer` RPC command to pay an offer or the Tip Jar plugin to generate an offer.",
       anchor: "eclair"
     },
     {
       path: ldk,
       name: "Lightning Dev Kit",
       description:
-        "LDK has methods to create offers and pay offers.",
+        "LDK lets you create and pay offers. You can learn more about these methods in this blog post.",
       anchor: "ldk"
     },
   ];
@@ -254,8 +254,7 @@ export default function Home() {
                 Get Involved
               </h2>
               <span>
-                Interested in pushing the standard forward or learning how to adopt?
-                Here’s where the action happens:
+              Interested in adopting BOLT12 or helping make it the new standard for instant bitcoin payments? Start here:
               </span>
               <div className="flex flex-col gap-4 md:flex-row w-full">
                 <a

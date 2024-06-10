@@ -18,7 +18,7 @@ export default function DeveloperDocs(){
                     <h2 id="cln">Core Lightning</h2>
 
                     <p>
-                        To use BOLT 12 with Core Lightning, you will need to run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag. With your Eclair node, you can use the `payoffer` RPC command to pay an offer, or the Tip Jar plugin to generate an offer.LDK has methods to create offers and pay offers.
+                        To use BOLT 12 with Core Lightning, you will need to run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag.
                     </p>
                     
                     <p><a href="https://docs.corelightning.org/docs/configuration#experimental-options" target="_blank">This page from the Core Lightning docs</a> explains the feature flags a little more.</p>
@@ -27,13 +27,13 @@ export default function DeveloperDocs(){
 
                     <h2 id="eclair">Eclair</h2>
 
-                    <p>With your Eclair node, you can use the `payoffer` RPC command to pay an offer, or the Tip Jar plugin to generate an offer. You can find some more details in the <a href="https://github.com/ACINQ/eclair/blob/master/docs/release-notes/eclair-v0.10.0.md" target="_blank">Eclair v0.10.0 Release notes</a>.</p>
+                    <p>With your Eclair node, you can use the `payoffer` RPC command to pay an offer or the Tip Jar plugin to generate an offer. You can find some more details in the <a href="https://github.com/ACINQ/eclair/blob/master/docs/release-notes/eclair-v0.10.0.md" target="_blank">Eclair v0.10.0 Release notes</a>.</p>
 
                     <hr />
 
                     <h2 id="ldk">Lightning Dev Kit</h2>
 
-                    <p>LDK has methods to create offers and pay offers. You can learn more about these methdods in <a href="https://lightningdevkit.org/blog/bolt12-has-arrived/" target="_blank">this blog post</a>.</p>
+                    <p>LDK lets you create and pay offers. You can learn more about these methdods in <a href="https://lightningdevkit.org/blog/bolt12-has-arrived/" target="_blank">this blog post</a>.</p>
 
                     <hr />
 
