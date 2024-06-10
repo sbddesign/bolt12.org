@@ -20,12 +20,12 @@ export default function UserProfile(props:UserProfileProps){
                     <Image src={props.imageSrc} placeholder="blur" alt="" width={480} height={324} className="w-full" />
                 </div>
                 <div className="w-full flex flex-col gap-4 lg:w-1/2 lg:mt-8"> 
-                    <h3 className="text-[#6F4EA6] font-headings text-4xl w-full"><span className="font-display block">{props.userName} loves</span> {props.featureName}</h3>
+                    <h3 className="text-[#6F4EA6] font-headings text-4xl w-full">{props.featureName}</h3>
                 
                     <p>{props.description}</p>
                     
                     <a href={props.link} className="flex flex-row gap-2 text-[#37869F] font-semibold text-2xl items-center">
-                        <span className="inline-block">{props.linkText || "See User Profile"}</span>
+                        <span className="inline-block">{props.linkText || `See ${props.userName}’s Story`}</span>
                         <ArrowRightIcon className="w-6 h-6 " />
                     </a>
                 </div>
