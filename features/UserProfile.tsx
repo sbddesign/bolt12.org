@@ -25,7 +25,7 @@ export default function UserProfile(props:UserProfileProps){
                     <p>{props.description}</p>
                     
                     <a href={props.link} className="flex flex-row gap-2 text-[#37869F] font-semibold text-2xl items-center">
-                        <span className="inline-block">{props.linkText || `See ${props.userName}’s Story`}</span>
+                        <span className="inline-block">{props.linkText || `See ${props.userName}’s BOLT 12 Story`}</span>
                         <ArrowRightIcon className="w-6 h-6 " />
                     </a>
                 </div>
