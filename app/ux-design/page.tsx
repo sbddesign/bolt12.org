@@ -31,7 +31,6 @@ import elahehNewUserName from "@/public/ux/elaheh/NewUserName.png";
 import elahehNewUserNameFilled from "@/public/ux/elaheh/NewUserNameFilled.png";
 import elahehPaymentCode from "@/public/ux/elaheh/PaymentCode.png";
 import elahehSocialPost from "@/public/ux/elaheh/SocialPost.png";
-import placeholder from "@/public/ux/Placeholder.png";
 
 export const metadata:Metadata = {
   title: "UX Design | BOLT 12",

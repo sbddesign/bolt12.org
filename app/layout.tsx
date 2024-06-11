@@ -3,19 +3,20 @@ import "./globals.css";
 
 const defaultMeta = {
   title: "BOLT 12 | This is how we bitcoin in the future!",
-  description: "BOLT 12 is a protocol upgrade to the Lightning network that will enable re-usable payment requests, increased receiver privacy, and better censorship resistance. Come see the bitcoin of the future!",
+  description:
+    "BOLT 12 is a protocol upgrade to the Lightning network that will enable re-usable payment requests, increased receiver privacy, and better censorship resistance. Come see the bitcoin of the future!",
   image: {
     url: "https://bolt12.org/bolt-12-poster.jpg",
     width: 1920,
     height: 1080,
-    alt: "A futuristic city in space with the BOLT 12 logo"
-  }
-}
+    alt: "A futuristic city in space with the BOLT 12 logo",
+  },
+};
 
 export const metadata: Metadata = {
   title: defaultMeta.title,
   description: defaultMeta.description,
-  openGraph:{
+  openGraph: {
     // title: defaultMeta.title,
     // description: defaultMeta.description,
     images: [
@@ -23,18 +24,18 @@ export const metadata: Metadata = {
         url: defaultMeta.image.url,
         width: defaultMeta.image.width,
         height: defaultMeta.image.height,
-        alt: defaultMeta.image.alt
-      }
+        alt: defaultMeta.image.alt,
+      },
     ],
     locale: "en_US",
-    type: "website"
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     // title: defaultMeta.title,
     // description: defaultMeta.description,
-    images: [defaultMeta.image.url]
-  }
+    images: [defaultMeta.image.url],
+  },
 };
 
 export default function RootLayout({
