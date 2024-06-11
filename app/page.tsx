@@ -30,14 +30,14 @@ export default function Home() {
       path: lnd,
       name: "LND",
       description:
-        "While LND does not yet support BOLT12, you can run LNDK alongside your LND node to start experimenting with BOLT12.",
+        "While LND does not yet support BOLT 12, you can run LNDK alongside your LND node to start experimenting with BOLT 12.",
       anchor: "lnd"
     },
     {
       path: cln,
       name: "Core Lightning",
       description:
-        "To use BOLT12 with Core Lightning, run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag.",
+        "To use BOLT 12 with Core Lightning, run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag.",
       anchor: "cln"
     },
     {
@@ -68,21 +68,21 @@ export default function Home() {
       userName: "Brijesh",
       featureName: "Receiver Privacy",
       imageSrc:  brijesh,
-      description:  "As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT12’s route blinding, I can now accept payments discreetly and securely!",
+      description:  "As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT 12’s route blinding, I can now accept payments discreetly and securely!",
       link:  "/ux-design/#receiver-privacy"
     },
     {
       userName: "Charlotte",
       featureName: "Social Integration",
       imageSrc:  charlotte,
-      description:  "I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT12!",
+      description:  "I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT 12!",
       link:  "/ux-design/#social-integration"
     },
     {
       userName: "Danh",
       featureName: "Auto-withdrawals",
       imageSrc:  danh,
-      description:  "After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.",
+      description:  "After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT 12 offers.",
       link:  "/ux-design/#auto-withdrawals"
     },
     {
@@ -176,7 +176,7 @@ export default function Home() {
           <div className="flex flex-col gap-12 p-6 justify-center z-30">
             <div className="flex md:flex-row md:justify-between items-center flex-col gap-6">
               <h2 className="text-b12-yellow text-3xl md:text-4xl font-headings p-6 bg-b12-teal w-full flex items-center justify-center rounded-tl-[24px] rounded-tr-[48px] rounded-br-[8px] rounded-bl-[48px] md:rounded-tl-[48px] md:rounded-tr-[96px] md:rounded-br-[8px] md:rounded-bl-[96px] md:w-auto md:px-10">
-                How to Integrate BOLT12
+                How to Integrate BOLT 12
               </h2>
               <a href="/developers" className="bg-[#FFF963] flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] text-b12-red font-display text-2xl p-4 drop-shadow-hard-purple">
                 Developer Docs
@@ -254,7 +254,7 @@ export default function Home() {
                 Get Involved
               </h2>
               <span>
-              Interested in adopting BOLT12 or helping make it the new standard for instant bitcoin payments? Start here:
+              Interested in adopting BOLT 12 or helping make it the new standard for instant bitcoin payments? Start here:
               </span>
               <div className="flex flex-col gap-4 md:flex-row w-full">
                 <a
