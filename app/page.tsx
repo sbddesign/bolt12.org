@@ -141,6 +141,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* About */}
         <div className="flex flex-col items-center justify-center gap-12 p-6 md:p-24 mx-auto max-w-4xl w-full">
           <div className="flex flex-col gap-4 w-full">
             <h2 className="text-center mx-auto text-5xl">What is BOLT 12?</h2>
@@ -161,7 +162,7 @@ export default function Home() {
             </p>
           </div>
 
-        <div className="flex flex-col items-center w-full py-24 gap-20 p-8 lg:gap-32 relative z-40 bg-white">
+        <div className="flex flex-col items-center w-full max-md:pt-8 py-24 gap-20 p-8 lg:gap-32 relative z-40 bg-white">
           {userProfiles.map((profile, index) => (
             <UserProfile key={index} {...profile} config={index % 2 === 0 ? "even" : "odd"} />
           ))}
