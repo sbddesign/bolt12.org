@@ -65,7 +65,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  @apply from-cyan-200 to-blue-800 bg-gradient-to-b mx-10;
+  @apply from-cyan-200 to-blue-800 bg-gradient-to-b rounded-lg;
 }
 
 .zazzy-scroll::-webkit-scrollbar {
