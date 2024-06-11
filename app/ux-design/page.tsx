@@ -207,7 +207,7 @@ export default function UxDesign(){
                     <h2 id="reusable-payment-requests">Reusable Payment Requests</h2>
                     <blockquote>
                         <p>
-                            Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT11 invoices.
+                            Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT 11 invoices.
                         </p>
                     </blockquote>
                     <p>
