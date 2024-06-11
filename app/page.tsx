@@ -109,7 +109,7 @@ export default function Home() {
       <Header shy />
       <main className="flex min-h-screen flex-col items-center">
         {/* Hero */}
-        <div className="min-h-screen flex items-center justify-center flex-col gap-20 lg:gap-16 p-4 py-12 lg:px-12 lg:pt-24 relative z-40 bg-white w-full">
+        <div className="min-h-[75vh] md:min-h-screen flex items-center justify-center flex-col gap-20 lg:gap-16 p-4 py-12 lg:px-12 lg:pt-24 relative z-40 bg-white w-full">
           {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
           <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
             <h1 className="sr-only">Welcome to BOLT 12</h1>
@@ -141,8 +141,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-12 p-24 mx-auto max-w-4xl">
-          <div className="flex flex-col gap-4">
+        <div className="flex flex-col items-center justify-center gap-12 p-6 md:p-24 mx-auto max-w-4xl w-full">
+          <div className="flex flex-col gap-4 w-full">
             <h2 className="text-center mx-auto text-5xl">What is BOLT 12?</h2>
             <p className="text-lg">
               BOLT 12 is a proposed upgrade to the Lightning network. For users, it can enable things like reusable payment requests, increased receiver privacy, and increased censorship resistance.
@@ -152,11 +152,11 @@ export default function Home() {
 
         {/* User Stories */}
 
-        <div className="flex flex-col items-center text-center gap-8 text-xl md:text-2xl lg:text-4xl w-full justify-center max-w-lg">
+        <div className="flex flex-col items-center text-center gap-8 p-6 text-xl md:text-2xl lg:text-4xl w-full justify-center max-w-lg">
             <h2 className="">
               Ever wondered what it&rsquo;s like to live in the futuristic utopia of BOLT 12?
             </h2>
-            <p className="font-display text-b12-purple">
+            <p className="font-display text-b12-purple text-4xl">
               Let&rsquo;s take a look!
             </p>
           </div>
