@@ -10,7 +10,8 @@
   clip-path: inset(0 0 0 0);
 }
 
-article a, p a {
+article a,
+p a {
   @apply text-b12-purple underline;
 }
 
@@ -53,4 +54,28 @@ html {
 
 blockquote {
   @apply p-4 border-l-4 border-l-gray-300 italic;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  @apply bg-cyan-200;
+}
+
+html::-webkit-scrollbar-thumb {
+  @apply from-cyan-200 to-blue-800 bg-gradient-to-b rounded-lg;
+}
+
+.zazzy-scroll::-webkit-scrollbar {
+  @apply h-3;
+}
+
+.zazzy-scroll-track::-webkit-scrollbar-track {
+  @apply bg-cyan-200 rounded-3xl;
+}
+
+.zazzy-scroll-thumb::-webkit-scrollbar-thumb {
+  @apply from-cyan-200 to-blue-800 bg-gradient-to-r bg-red-400 rounded-3xl;
 }

@@ -31,7 +31,6 @@ import elahehNewUserName from "@/public/ux/elaheh/NewUserName.png";
 import elahehNewUserNameFilled from "@/public/ux/elaheh/NewUserNameFilled.png";
 import elahehPaymentCode from "@/public/ux/elaheh/PaymentCode.png";
 import elahehSocialPost from "@/public/ux/elaheh/SocialPost.png";
-import placeholder from "@/public/ux/Placeholder.png";
 
 export const metadata:Metadata = {
   title: "UX Design | BOLT 12",
@@ -201,7 +200,7 @@ export default function UxDesign(){
         <>
             <Header />
 
-            <div className="flex flex-col gap-8 p-8 pt-36 mx-auto">
+            <div className="flex flex-col gap-8 p-8 pt-36 mx-auto max-w-7xl">
                 <h1 className="font-bold">User Stories</h1>
                 <section className="py-12 border-b border-t border-gray-200 flex flex-col gap-6">
                     <h2 id="reusable-payment-requests">Reusable Payment Requests</h2>
