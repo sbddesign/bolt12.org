@@ -6,7 +6,7 @@ const defaultMeta = {
   description:
     "BOLT 12 is a protocol upgrade to the Lightning network that will enable re-usable payment requests, increased receiver privacy, and better censorship resistance. Come see the bitcoin of the future!",
   image: {
-    url: "https://bolt12.org/bolt-12-poster.jpg",
+    url: "https://bolt12.org/bolt-12-poster.png",
     width: 1920,
     height: 1080,
     alt: "A futuristic city in space with the BOLT 12 logo",
