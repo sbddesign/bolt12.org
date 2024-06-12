@@ -109,7 +109,7 @@ export default function Home() {
       <Header shy />
       <main className="flex min-h-screen flex-col items-center">
         {/* Hero */}
-        <div className="min-h-[75vh] md:min-h-screen flex items-center justify-center flex-col gap-20 lg:gap-16 p-4 py-12 lg:px-12 lg:pt-24 relative z-40 bg-white w-full">
+        <div className="md:min-h-screen flex items-center justify-center flex-col gap-20 lg:gap-16 p-4 max-md:mt-[74px] py-24 md:py-12 lg:px-12 lg:pt-24 relative z-40 bg-white w-full">
           {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
           <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
             <h1 className="sr-only">Welcome to BOLT 12</h1>
