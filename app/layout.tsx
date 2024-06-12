@@ -16,9 +16,8 @@ const defaultMeta = {
 export const metadata: Metadata = {
   title: defaultMeta.title,
   description: defaultMeta.description,
-  openGraph: {
-    // title: defaultMeta.title,
-    // description: defaultMeta.description,
+  icons: [{rel: "icon", url: "/favicon/favicon.ico"}],
+  openGraph:{
     images: [
       {
         url: defaultMeta.image.url,

@@ -89,7 +89,7 @@ const stories:Stories = {
         {
             image: brijeshNewPayCodePrivate,
             alt: "Ui to give the offer extra privacy features",
-            caption: "He turns on the extra privacy option, which adds 2 blinded paths with 2 hops each to the BOLT12 offer."
+            caption: "He turns on the extra privacy option, which adds 2 blinded paths with 2 hops each to the BOLT 12 offer."
         },
         {
             image: brijeshPaymentCode,
@@ -131,7 +131,7 @@ const stories:Stories = {
         {
             image: charlotteNostrProfile,
             alt: "",
-            caption: "Now her fans can send her zaps via BOLT12 over Nostr."
+            caption: "Now her fans can send her zaps via BOLT 12 over Nostr."
         }
     ],
     danh: [
@@ -143,7 +143,7 @@ const stories:Stories = {
         {
             image: danhBTCExchange,
             alt: "",
-            caption: "Dan goes into the withdrawal options for his exchange account, and chooses a recurring withdrawal. Exchange asks him for a bitcoin address or a BOLT12 offer."
+            caption: "Dan goes into the withdrawal options for his exchange account, and chooses a recurring withdrawal. Exchange asks him for a bitcoin address or a BOLT 12 offer."
         },
         {
             image: danhPaymentCode,
@@ -206,7 +206,7 @@ export default function UxDesign(){
                     <h2 id="reusable-payment-requests">Reusable Payment Requests</h2>
                     <blockquote>
                         <p>
-                            Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT11 invoices.
+                            Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT 11 invoices.
                         </p>
                     </blockquote>
                     <p>
@@ -218,7 +218,7 @@ export default function UxDesign(){
                     <h2 id="receiver-privacy">Receiver Privacy</h2>
                     <blockquote>
                         <p>
-                        As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT12’s route blinding, I can now accept payments discreetly and securely!
+                        As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT 12’s route blinding, I can now accept payments discreetly and securely!
                         </p>
                     </blockquote>
                     <p>
@@ -230,7 +230,7 @@ export default function UxDesign(){
                     <h2 id="social-integration">Social Integration</h2>
                     <blockquote>
                         <p>
-                        I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT12!
+                        I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT 12!
                         </p>
                     </blockquote>
                     <p>
@@ -242,7 +242,7 @@ export default function UxDesign(){
                     <h2 id="auto-withdrawals">Auto-withdrawals</h2>
                     <blockquote>
                         <p>
-                        After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it&rsquo;s better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.
+                        After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it&rsquo;s better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT 12 offers.
                         </p>
                     </blockquote>
                     <p>

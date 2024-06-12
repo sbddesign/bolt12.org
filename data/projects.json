@@ -1,27 +1,27 @@
 [
     {
         "name": "Ocean",
-        "description": "Ocean Mining announced in April 2024 that miners can submit a BOLT 12 offer in order to receive their payouts from the pool over Lightning.\"Using BOLT12 also allows us to prove to the world that a payment was made, the size of the payment, the node to which it was paid, and that it was paid by us.\"",
+        "description": "Ocean Mining announced in April 2024 that miners can submit BOLT 12 offers to receive pool payouts over Lightning. \"BOLT 12 lets us know when someone made a payment, the size of the payment, which node received the payment, and that it was paid in the first place.\"",
         "image": "projects/ocean.png",
         "website": "https://ocean.xyz/"
     },
     {
         "name": "Zeus",
-        "description": "Zeus, a lightning wallet for the gods, has an alpha release which integrates with Twelve Cash, allowing Core Lightning users to create their own BOLT 12 offer and create a @twelve.cash username.",
+        "description": "Zeus, a lightning wallet for the gods, has an alpha release that integrates with Twelve Cash, allowing Core Lightning users to create BOLT 12 offers and @twelve.cash usernames.",
         "image": "projects/zeus.png",
         "website": "https://zeusln.com/",
         "code": "https://github.com/ZeusLN/zeus"
     },
     {
         "name": "Human Readable Address",
-        "description": "This BIP (Bitcoin Improvement Proposal) defines a way to put bitcoin payment info into DNS records, allowing for something resembling an email address that a user can pay to. These can include BOLT 12 offers, as well as any other static bitcoin payment identifier.",
+        "description": "This BIP (Bitcoin Improvement Proposal) lets you put bitcoin payment info into DNS records, allowing users to pay to something resembling an email address. These can include BOLT 12 offers and any other static bitcoin payment identifier.",
         "image": "projects/human-readable-address.png",
         "website": "https://github.com/bitcoin/bips/pull/1551/files",
         "code": "https://github.com/bitcoin/bips/pull/1551/files"
     },
     {
         "name": "Twelve Cash",
-        "description": "Twelve Cash is an implementation of the Human Readable Payments BIP. It includes an API you can use for creating @twelve.cash usernames in your lightning app, as well as a website frontend for creating usernames and validating addresses.",
+        "description": "Twelve Cash is an implementation of the Human Readable Payments BIP. It includes an API to create @twelve.cash usernames in lightning apps and a website front-end for creating usernames and validating addresses.",
         "image": "projects/twelve-cash.png",
         "website": "https://twelve.cash/",
         "code": "https://github.com/ATLBitLab/twelvecash"
@@ -35,14 +35,14 @@
     },
     {
         "name": "ROYGBIV",
-        "description": "ROYGBIV is a prism plugin for Core Lightning. You can create a BOLT 12 offer that, when paid to, splits the payment out automatically to many recipients.",
+        "description": "ROYGBIV is a prism plugin for Core Lightning, letting you create a BOLT 12 offer that, when paid to, automatically splits the payment into multiple receipts.",
         "image": "projects/roygbiv.png",
         "website": "https://www.roygbiv.guide/",
         "code": "https://github.com/gudnuf/bolt12-prism"
     },
     {
         "name": "Ride the Lightning",
-        "description": "RTL, a lightning node management UI, allows Core Lightning node oeprators to create BOLT 12 offers.",
+        "description": "RTL, a lightning node management UI, allows Core Lightning node operators to create BOLT 12 offers.",
         "image": "projects/ride-the-lightning.png",
         "website": "https://www.ridethelightning.info/",
         "code": "https://github.com/Ride-The-Lightning/RTL/discussions"

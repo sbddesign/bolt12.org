@@ -30,28 +30,28 @@ export default function Home() {
       path: lnd,
       name: "LND",
       description:
-        "While LND does not support BOLT 12 at this moment, you can run LNDK along-side your LND to bhegin trying out BOLT 12.",
+        "While LND does not yet support BOLT 12, you can run LNDK alongside your LND node to start experimenting with BOLT 12.",
       anchor: "lnd"
     },
     {
       path: cln,
       name: "Core Lightning",
       description:
-        "To use BOLT 12 with Core Lightning, you will need to run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag.",
+        "To use BOLT 12 with Core Lightning, run Core LN with the `--enable-experimental-features` or `--enable-experimental-offers` flag.",
       anchor: "cln"
     },
     {
       path: eclair,
       name: "Eclair",
       description:
-        "With your Eclair node, you can use the `payoffer` RPC command to pay an offer, or the Tip Jar plugin to generate an offer.",
+        "With your Eclair node, you can use the `payoffer` RPC command to pay an offer or the Tip Jar plugin to generate an offer.",
       anchor: "eclair"
     },
     {
       path: ldk,
       name: "Lightning Dev Kit",
       description:
-        "LDK has methods to create offers and pay offers.",
+        "LDK lets you create and pay offers. You can learn more about these methods in this blog post.",
       anchor: "ldk"
     },
   ];
@@ -61,28 +61,28 @@ export default function Home() {
       userName: "Alice",
       featureName: "Reusable Payment Requests",
       imageSrc:  alice,
-      description:  "Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT11 invoices.",
+      description:  "Now that I can slap a QR code on our tip jar, my band can seamlessly receive tips in bitcoin! No more creating a new QR code for every virtual fan who wants to tip us after a moon colony gig, and no more losing 75% of potential tippers due to the long wait for BOLT 11 invoices.",
       link:  "/ux-design/#reusable-payment-requests"
     },
     {
       userName: "Brijesh",
       featureName: "Receiver Privacy",
       imageSrc:  brijesh,
-      description:  "As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT12’s route blinding, I can now accept payments discreetly and securely!",
+      description:  "As a shadowy super coder contributing to Bitcoin Core, I needed a way to accept donations that preserves anonymity while compartmentalizing my 784 digital identities. With BOLT 12’s route blinding, I can now accept payments discreetly and securely!",
       link:  "/ux-design/#receiver-privacy"
     },
     {
       userName: "Charlotte",
       featureName: "Social Integration",
       imageSrc:  charlotte,
-      description:  "I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT12!",
+      description:  "I’m a content creator on Nostr who has always wanted a self-custodial way to accept zaps for my VR artwork. By publishing my bitcoin wallet’s payment code to my Nostr profile, I can receive zaps directly, without custodians or middlemen. Viva la BOLT 12!",
       link:  "/ux-design/#social-integration"
     },
     {
       userName: "Danh",
       featureName: "Auto-withdrawals",
       imageSrc:  danh,
-      description:  "After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT12 offers.",
+      description:  "After hearing some cyborgs talk about bitcoin on XNBC Squawk Cube, I decided to buy in. Later, I learned that it's better to self-custody bitcoin rather than trust exchanges. So, I set my exchange account to automatically deposit bitcoin into a self-custodial wallet using BOLT 12 offers.",
       link:  "/ux-design/#auto-withdrawals"
     },
     {
@@ -109,7 +109,7 @@ export default function Home() {
       <Header shy />
       <main className="flex min-h-screen flex-col items-center">
         {/* Hero */}
-        <div className="min-h-screen flex items-center justify-center flex-col gap-20 lg:gap-16 p-4 py-12 lg:px-12 lg:pt-24 relative z-40 bg-white w-full">
+        <div className="md:min-h-screen flex items-center justify-center flex-col gap-20 lg:gap-16 p-4 max-md:mt-[74px] py-24 md:py-12 lg:px-12 lg:pt-24 relative z-40 bg-white w-full">
           {/* Source: https://www.figma.com/file/6Fffpw0We8W3F5XnJfmdJ1/Bolt12.org?type=design&node-id=855%3A3620&mode=design&t=0LbwOMnp5HdPPCRR-1 */}
           <div className="relative w-full max-w-[1372px] h-0 pb-[52%]">
             <h1 className="sr-only">Welcome to BOLT 12</h1>
@@ -139,19 +139,30 @@ export default function Home() {
               className="w-[46%] max-w-[643px] absolute top-0 left-0 animate-hero-logo-float"
             />
           </div>
-          <div className="flex flex-col items-center text-center  text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 lg:w-1/2 justify-center max-w-sm">
-            <p className="text-[#685588] font-headings font-regular">
-              Ever wondered what it&rsquo;s like to live in the futuristic utopia of
-              BOLT 12?
-            </p>
-            <p className="text-[#685588] font-display">
-              Let&rsquo;s take a look!
+        </div>
+
+        {/* About */}
+        <div className="flex flex-col items-center justify-center gap-12 p-6 md:p-24 mx-auto max-w-4xl w-full">
+          <div className="flex flex-col gap-4 w-full">
+            <h2 className="text-center mx-auto text-5xl">What is BOLT 12?</h2>
+            <p className="text-lg">
+              BOLT 12 is a proposed upgrade to the Lightning network. For users, it can enable things like reusable payment requests, increased receiver privacy, and increased censorship resistance.
             </p>
           </div>
         </div>
 
         {/* User Stories */}
-        <div className="flex flex-col items-center w-full py-24 gap-20 p-8 lg:gap-32 relative z-40 bg-white">
+
+        <div className="flex flex-col items-center text-center gap-8 p-6 text-xl md:text-2xl lg:text-4xl w-full justify-center max-w-lg">
+            <h2 className="">
+              Ever wondered what it&rsquo;s like to live in the futuristic utopia of BOLT 12?
+            </h2>
+            <p className="font-display text-b12-purple text-4xl">
+              Let&rsquo;s take a look!
+            </p>
+          </div>
+
+        <div className="flex flex-col items-center w-full max-md:pt-8 py-24 gap-20 p-8 lg:gap-32 relative z-40 bg-white">
           {userProfiles.map((profile, index) => (
             <UserProfile key={index} {...profile} config={index % 2 === 0 ? "even" : "odd"} />
           ))}
@@ -166,7 +177,7 @@ export default function Home() {
           <div className="flex flex-col gap-12 p-6 justify-center z-30">
             <div className="flex md:flex-row md:justify-between items-center flex-col gap-6">
               <h2 className="text-b12-yellow text-3xl md:text-4xl font-headings p-6 bg-b12-teal w-full flex items-center justify-center rounded-tl-[24px] rounded-tr-[48px] rounded-br-[8px] rounded-bl-[48px] md:rounded-tl-[48px] md:rounded-tr-[96px] md:rounded-br-[8px] md:rounded-bl-[96px] md:w-auto md:px-10">
-                How to Integrate BOLT12
+                How to Integrate BOLT 12
               </h2>
               <a href="/developers" className="bg-[#FFF963] flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] text-b12-red font-display text-2xl p-4 drop-shadow-hard-purple">
                 Developer Docs
@@ -201,9 +212,9 @@ export default function Home() {
 
         {/* Projects - BOLT 12 in Actions */}
         <div className="w-full flex flex-col gap-12 py-16 items-center justify-center relative z-40 bg-white">
-          <p className="font-headings text-b12-purple text-center mx-auto text-5xl">
+          <h2 className="font-headings text-b12-purple text-center mx-auto text-5xl">
             Now let’s see BOLT 12 <span className="font-display block text-6xl">in action!</span>
-          </p>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 gap-x-12 gap-y-16 max-w-7xl">
             {projects.map((project, index) => (
               <>
@@ -244,8 +255,7 @@ export default function Home() {
                 Get Involved
               </h2>
               <span>
-                Interested in pushing the standard forward or learning how to adopt?
-                Here’s where the action happens:
+              Interested in adopting BOLT 12 or helping make it the new standard for instant bitcoin payments? Start here:
               </span>
               <div className="flex flex-col gap-4 md:flex-row w-full">
                 <a
