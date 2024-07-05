@@ -219,7 +219,7 @@ export default function Home() {
             {projects.map((project, index) => (
               <>
                 <div className="flex flex-col gap-9 w-full min-w-[200px] max-w-[420px] basis-1" key={index}>
-                  <Image src={"/" + project.image} alt="" width={148} height={148} className="rounded-tl-[48px] rounded-tr-[24px] rounded-br-[48px] rounded-bl-[24px] drop-shadow-hard-purple border border-gray-100 border-b12-purple/20" />
+                  <Image src={"/" + project.image} alt="" width={148} height={148} className="rounded-tl-[48px] rounded-tr-[24px] rounded-br-[48px] rounded-bl-[24px] drop-shadow-hard-purple border border-b12-purple/20" />
                   <div className="flex flex-col gap-3">
                     <h3 className="text-b12-purple text-4xl font-headings">{project.name}</h3>
                     <p>{project.description}</p>
