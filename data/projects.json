@@ -46,5 +46,38 @@
         "image": "projects/ride-the-lightning.png",
         "website": "https://www.ridethelightning.info/",
         "code": "https://github.com/Ride-The-Lightning/RTL/discussions"
+    },
+    {
+        "name": "BOLT 12 Zapper",
+        "description": "A Bitcoin++ 2024 hackathon project for zapping BOLT 12 offers in nostr profiles.",
+        "image": "projects/bolt-12-zapper.jpg",
+        "code": "https://github.com/gudnuf/bolt12-covenant-zapper"
+    },
+    {
+        "name": "Lampo",
+        "description": "A fast and modular lightning network implementation for all usages, written in Rust. lampo (lightning in Italian) is a experimental implementation of a tiny lightning node",
+        "image": "projects/lampo.jpg",
+        "website": "https://lampo.devcrew.cc/",
+        "code": "https://github.com/vincenzopalazzo/lampo.rs"
+    },
+    {
+        "name": "payto",
+        "description": "A Core Lightning (CLN) companion app that can pay to lightning address, LNURL, BIP 353 (DNS Payment Instructions) and BOLT 12 offers",
+        "image": "projects/payto.jpg",
+        "code": "https://github.com/urza/payto"
+    },
+    {
+        "name": "BOLT 12 Playground",
+        "description": "The BOLT 12 Playground from Strike provides a docker stack that comprises of bitcoind, LND, LNDK, CLN, Eclair and LDK Node. It connects everything together, initializes wallets, and creates channels between the nodes.",
+        "image": "projects/strike-bolt-12-playground.png",
+        "website": "https://strike.me/blog/bolt12-playground/",
+        "code": "https://github.com/LN-Zap/bolt12-playground"
+    },
+    {
+        "name": "Phoenix",
+        "description": "Phoenix is a self-custodial Bitcoin wallet using Lightning to send/receive payments.",
+        "image": "projects/phoenix.png",
+        "website": "https://phoenix.acinq.co/",
+        "code": "https://github.com/ACINQ/phoenix"
     }
 ]
