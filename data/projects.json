@@ -96,7 +96,7 @@
     },
     {
         "name": "Entropy by D++",
-        "description": "This site helps you create a BIP 353 username containing a ZBOLT 12 offer.",
+        "description": "This site helps you create a BIP 353 username containing a BOLT 12 offer.",
         "image": "projects/dplusplus.png",
         "website": "https://dplus.plus/offer"
     },
