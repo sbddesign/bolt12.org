@@ -12,7 +12,7 @@ export default function DeveloperDocs(){
             <Header />
 
             <main className="w-full mx-auto p-8 pt-24 md:pt-36">
-                <article className="mx-auto max-w-4xl flex flex-col gap-8">
+                <article className="mx-auto max-w-6xl flex flex-col gap-8">
                     <h1 className="font-headings text-5xl">Developer Docs</h1>
 
                     <h2 id="cln">Core Lightning</h2>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "@/features/Footer";
 
 const defaultMeta = {
   title: "BOLT 12 | This is how we bitcoin in the future!",
@@ -56,7 +57,10 @@ export default function RootLayout({
           href="https://use.typekit.net/pqu3bot.css"
         ></link>
       </head>
-      <body className={``}>{children}</body>
+      <body className={``}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

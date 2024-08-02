@@ -200,7 +200,7 @@ export default function UxDesign(){
         <>
             <Header />
 
-            <div className="flex flex-col gap-8 p-8 pt-36 mx-auto max-w-7xl">
+            <div className="flex flex-col gap-8 p-8 pt-36 mx-auto max-w-6xl">
                 <h1 className="font-bold">User Stories</h1>
                 <section className="py-12 border-b border-t border-gray-200 flex flex-col gap-6">
                     <h2 id="reusable-payment-requests">Reusable Payment Requests</h2>
