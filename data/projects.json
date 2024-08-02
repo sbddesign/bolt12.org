@@ -21,7 +21,7 @@
     },
     {
         "name": "Twelve Cash",
-        "description": "Twelve Cash is an implementation of the Human Readable Payments BIP. It includes an API to create @twelve.cash usernames in lightning apps and a website front-end for creating usernames and validating addresses.",
+        "description": "Twelve Cash is an implementation of Human Readable Payments (BIP 353). It includes an API to create @twelve.cash usernames in lightning apps and a website front-end for creating usernames and validating addresses.",
         "image": "projects/twelve-cash.png",
         "website": "https://twelve.cash/",
         "code": "https://github.com/ATLBitLab/twelvecash"
@@ -79,5 +79,32 @@
         "image": "projects/phoenix.png",
         "website": "https://phoenix.acinq.co/",
         "code": "https://github.com/ACINQ/phoenix"
+    },
+    {
+        "name": "Plasma",
+        "description": "Plasma is an app that lets you connect to your Core Lightning node directly over the Lightning network. It supports sending and receiving to BOLT 12 offers.",
+        "image": "projects/plasma.png",
+        "website": "https://apps.apple.com/us/app/plasma-core-lightning-wallet/id6468914352",
+        "code": "https://github.com/Fonta1n3/Plasma"
+    },
+    {
+        "name": "SatsToMe",
+        "description": "SatsTo.me is a simple browser interface for resolving BIP 353 user names, which can be used to find BOLT 12 offers and other bitcoin payment information.",
+        "image": "projects/satstome.png",
+        "website": "https://satsto.me/",
+        "code": "https://github.com/TheBlueMatt/satsto.me"
+    },
+    {
+        "name": "Entropy by D++",
+        "description": "This site helps you create a BIP 353 username containing a ZBOLT 12 offer.",
+        "image": "projects/dplusplus.png",
+        "website": "https://dplus.plus/offer"
+    },
+    {
+        "name": "Eltor",
+        "description": "Eltor ia a fork of the Tor network. It aims to incentivize Tor relays by charging for access with lightning payments conducted with BOLT 12 offers.",
+        "image": "projects/eltor.png",
+        "website": "https://x.com/eltordev",
+        "code": "https://bitbucket.org/eltordev/workspace/projects/ELTOR"
     }
 ]

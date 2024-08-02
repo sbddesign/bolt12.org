@@ -11,7 +11,8 @@
 }
 
 article a,
-p a {
+p a,
+footer a {
   @apply text-b12-purple underline;
 }
 
