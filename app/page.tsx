@@ -271,7 +271,7 @@ export default function Home() {
                   className="bg-[#37869F] shadow-footer px-6 py-4 flex items-center justify-center rounded-tl-[96px] rounded-tr-[48px] rounded-br-[96px] rounded-bl-[24px] w-full"
                 >
                   <span className="text-[#FFF963] text-2xl font-display">
-                    Github PR
+                    GitHub PR
                   </span>
                 </a>
               </div>
