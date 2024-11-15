@@ -138,17 +138,17 @@ const stories:Stories = {
         {
             image: danh,
             alt: "",
-            caption: "Dan likes to invest, and he DCAs bitcoin everyday with a recurring buy on an exchange. He wants a way to sweep his BTC off the exchange automatically once a week."
+            caption: "Danh likes to invest, and he DCAs bitcoin everyday with a recurring buy on an exchange. He wants a way to sweep his BTC off the exchange automatically once a week."
         },
         {
             image: danhBTCExchange,
             alt: "",
-            caption: "Dan goes into the withdrawal options for his exchange account, and chooses a recurring withdrawal. Exchange asks him for a bitcoin address or a BOLT 12 offer."
+            caption: "Danh goes into the withdrawal options for his exchange account, and chooses a recurring withdrawal. Exchange asks him for a bitcoin address or a BOLT 12 offer."
         },
         {
             image: danhPaymentCode,
             alt: "",
-            caption: "Dan goes to his bitcoin wallet..."
+            caption: "Danh goes to his bitcoin wallet..."
         },
         {
             image: danhSharing,
@@ -163,7 +163,7 @@ const stories:Stories = {
         {
             image: danhTextMessages,
             alt: "",
-            caption: "OR, in a world where async payments doesn’t exist yet, Dan receives a text from his exchange once a week asking him if he’d like to withdraw funds. He taps a link inside, which opens his bitcoin wallet, and then the exchange sends the payment."
+            caption: "OR, in a world where async payments doesn’t exist yet, Danh receives a text from his exchange once a week asking him if he’d like to withdraw funds. He taps a link inside, which opens his bitcoin wallet, and then the exchange sends the payment."
         },
     ],
     elaheh: [
@@ -234,7 +234,7 @@ export default function UxDesign(){
                         </p>
                     </blockquote>
                     <p>
-                        In this scenario, the user wants to receive self-custodial zaps on Nostr. While the current zaps implementation uses LNURL, there is not reason it could not be done with a BOLT 12 offer as well. For example, a BOLT 12 could be included in a `kind: 0` metadata note, AKA <em>the user&rsquo;s profile</em>. From there, Nostr clients aware of BOLT 12 could attempt to pay using the offer instead of the LNURL data in Charlotte&rsquo;s profile.
+                        In this scenario, the user wants to receive self-custodial zaps on Nostr. While the current zaps implementation uses LNURL, there is no reason it could not be done with a BOLT 12 offer as well. For example, a BOLT 12 could be included in a `kind: 0` metadata note, AKA <em>the user&rsquo;s profile</em>. From there, Nostr clients aware of BOLT 12 could attempt to pay using the offer instead of the LNURL data in Charlotte&rsquo;s profile.
                     </p>
                     <StoryRow story={stories.charlotte} />
                 </section>
