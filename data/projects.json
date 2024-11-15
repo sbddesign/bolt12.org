@@ -13,6 +13,19 @@
         "code": "https://github.com/ZeusLN/zeus"
     },
     {
+        "name": "Strike",
+        "description": "Strike announced in August 2024 support for paying to BOLT 12 offers using LNDK in their backend systems.",
+        "image": "projects/strike-bolt-12-playground.png",
+        "website": "https://strike.me/blog/bolt12-offers/"
+    },
+    {
+        "name": "Boltz",
+        "description": "Boltz announced  BOLT 12 offer support for submarine swaps.",
+        "image": "projects/boltz.png",
+        "code": "https://github.com/BoltzExchange/boltz-web-app/releases/tag/v1.5.0",
+        "website": "https://boltz.exchange/"
+    },
+    {
         "name": "Human Readable Address",
         "description": "This BIP (Bitcoin Improvement Proposal) lets you put bitcoin payment info into DNS records, allowing users to pay to something resembling an email address. These can include BOLT 12 offers and any other static bitcoin payment identifier.",
         "image": "projects/human-readable-address.png",
