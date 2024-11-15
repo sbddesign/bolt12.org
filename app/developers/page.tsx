@@ -33,7 +33,7 @@ export default function DeveloperDocs(){
 
                     <h2 id="ldk">Lightning Dev Kit</h2>
 
-                    <p>LDK lets you create and pay offers. You can learn more about these methdods in <a href="https://lightningdevkit.org/blog/bolt12-has-arrived/" target="_blank">this blog post</a>.</p>
+                    <p>LDK lets you create and pay offers. You can learn more about these methods in <a href="https://lightningdevkit.org/blog/bolt12-has-arrived/" target="_blank">this blog post</a>.</p>
 
                     <hr />
 
