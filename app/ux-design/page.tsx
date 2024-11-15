@@ -74,7 +74,7 @@ const stories:Stories = {
         {
             image: brijesh,
             alt: "Brijesh in his secret trenchcoat",
-            caption: "Brijesh, known as Bob on Github, is a pseudonymous bitcoin FOSS dev and wants a way that people can support his work as privately as possible with BTC."
+            caption: "Brijesh, known as Bob on GitHub, is a pseudonymous bitcoin FOSS dev and wants a way that people can support his work as privately as possible with BTC."
         },
         {
             image: brijeshPayCodes,
