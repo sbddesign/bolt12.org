@@ -217,28 +217,26 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 gap-x-12 gap-y-16 max-w-7xl">
             {projects.map((project, index) => (
-              <>
-                <div className="flex flex-col gap-9 w-full min-w-[200px] max-w-[420px] basis-1" key={index}>
-                  <Image src={"/" + project.image} alt="" width={148} height={148} className="rounded-tl-[48px] rounded-tr-[24px] rounded-br-[48px] rounded-bl-[24px] drop-shadow-hard-purple border border-b12-purple/20" />
-                  <div className="flex flex-col gap-3">
-                    <h3 className="text-b12-purple text-4xl font-headings">{project.name}</h3>
-                    <p>{project.description}</p>
-                    <div className="flex flex-row gap-4">
-                      {project.website ?
-                        <a href={project.website} className="flex flex-row-reverse items-center justify-center gap-1 text-b12-teal font-medium">
-                          Website <GlobeAltIcon className="h-6 w-6" />
-                        </a>
-                      : ""}
+              <div className="flex flex-col gap-9 w-full min-w-[200px] max-w-[420px] basis-1" key={index}>
+                <Image src={"/" + project.image} alt="" width={148} height={148} className="rounded-tl-[48px] rounded-tr-[24px] rounded-br-[48px] rounded-bl-[24px] drop-shadow-hard-purple border border-b12-purple/20" />
+                <div className="flex flex-col gap-3">
+                  <h3 className="text-b12-purple text-4xl font-headings">{project.name}</h3>
+                  <p>{project.description}</p>
+                  <div className="flex flex-row gap-4">
+                    {project.website ?
+                      <a href={project.website} className="flex flex-row-reverse items-center justify-center gap-1 text-b12-teal font-medium">
+                        Website <GlobeAltIcon className="h-6 w-6" />
+                      </a>
+                    : ""}
 
-                      {project.code ?
-                        <a href={project.code} className="flex flex-row-reverse items-center justify-center gap-1 text-b12-teal font-medium">
-                          Code <CommandLineIcon className="h-6 w-6" />
-                        </a>
-                      : ""}
-                    </div>
-                  </div> 
-                </div>
-              </>
+                    {project.code ?
+                      <a href={project.code} className="flex flex-row-reverse items-center justify-center gap-1 text-b12-teal font-medium">
+                        Code <CommandLineIcon className="h-6 w-6" />
+                      </a>
+                    : ""}
+                  </div>
+                </div> 
+              </div>
             ))}
           </div>
         </div>
