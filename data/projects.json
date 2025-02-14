@@ -1,5 +1,30 @@
 [
     {
+        "name": "Lightspark",
+        "description": "Lightspark supports creating and paying offers.",
+        "image": "projects/lightspark.png",
+        "website": "https://www.lightspark.com/"
+    },
+    {
+        "name": "Phoenix",
+        "description": "Phoenix is a self-custodial Bitcoin wallet using Lightning to send/receive payments.",
+        "image": "projects/phoenix.png",
+        "website": "https://phoenix.acinq.co/",
+        "code": "https://github.com/ACINQ/phoenix"
+    },
+    {
+        "name": "Strike",
+        "description": "Strike announced in August 2024 support for paying to BOLT 12 offers using LNDK in their backend systems.",
+        "image": "projects/strike-bolt-12-playground.png",
+        "website": "https://strike.me/blog/bolt12-offers/"
+    },
+    {
+        "name": "Breez SDK",
+        "description": "Breez SDK Nodeless supports sending to BOLT 12 offers.",
+        "image": "projects/breez-sdk.png",
+        "website": "https://breez.technology/sdk/"
+    },
+    {
         "name": "Ocean",
         "description": "Ocean Mining announced in April 2024 that miners can submit BOLT 12 offers to receive pool payouts over Lightning. \"BOLT 12 lets us know when someone made a payment, the size of the payment, which node received the payment, and that it was paid in the first place.\"",
         "image": "projects/ocean.png",
@@ -13,10 +38,10 @@
         "code": "https://github.com/ZeusLN/zeus"
     },
     {
-        "name": "Strike",
-        "description": "Strike announced in August 2024 support for paying to BOLT 12 offers using LNDK in their backend systems.",
-        "image": "projects/strike-bolt-12-playground.png",
-        "website": "https://strike.me/blog/bolt12-offers/"
+        "name": "CoinOs",
+        "description": "CoinOS supports sending and receiving to BOLT 12 offers.",
+        "image": "projects/coinos.png",
+        "website": "https://coinos.io/"
     },
     {
         "name": "Boltz",
@@ -85,13 +110,6 @@
         "image": "projects/strike-bolt-12-playground.png",
         "website": "https://strike.me/blog/bolt12-playground/",
         "code": "https://github.com/LN-Zap/bolt12-playground"
-    },
-    {
-        "name": "Phoenix",
-        "description": "Phoenix is a self-custodial Bitcoin wallet using Lightning to send/receive payments.",
-        "image": "projects/phoenix.png",
-        "website": "https://phoenix.acinq.co/",
-        "code": "https://github.com/ACINQ/phoenix"
     },
     {
         "name": "Plasma",
