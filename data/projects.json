@@ -1,5 +1,11 @@
 [
     {
+        "name": "Voltage",
+        "description": "Voltage supports paying offers with LNDK enabled.",
+        "image": "projects/voltage.png",
+        "website": "https://www.voltage.cloud/"
+    },
+    {
         "name": "Lightspark",
         "description": "Lightspark supports creating and paying offers.",
         "image": "projects/lightspark.png",
