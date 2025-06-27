@@ -25,6 +25,12 @@
         "website": "https://breez.technology/sdk/"
     },
     {
+        "name": "Misty Breez",
+        "description": "Flutter mobile app that serves as a reference implementation for the Breez SDK - Nodeless",
+        "image": "projects/breez-sdk.png",
+        "website": "https://github.com/breez/misty-breez"
+    },
+    {
         "name": "Ocean",
         "description": "Ocean Mining announced in April 2024 that miners can submit BOLT 12 offers to receive pool payouts over Lightning. \"BOLT 12 lets us know when someone made a payment, the size of the payment, which node received the payment, and that it was paid in the first place.\"",
         "image": "projects/ocean.png",
