@@ -1,5 +1,11 @@
 [
     {
+        "name": "Alby Hub",
+        "description": "Alby Hub is a self-custodial, open source lightning wallet that connects to apps.",
+        "image": "projects/albyhub.svg",
+        "website": "https://www.albyhub.com/"
+    },
+    {
         "name": "Lightspark",
         "description": "Lightspark supports creating and paying offers.",
         "image": "projects/lightspark.png",
