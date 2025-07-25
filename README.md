@@ -7,9 +7,10 @@ Here is the [current figma file](https://www.figma.com/file/6Fffpw0We8W3F5XnJfmd
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies and run the development server:
 
 ```bash
+yarn
 yarn dev
 ```
 
