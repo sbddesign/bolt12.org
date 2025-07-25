@@ -149,5 +149,12 @@
         "image": "projects/eltor.png",
         "website": "https://x.com/eltordev",
         "code": "https://bitbucket.org/eltordev/workspace/projects/ELTOR"
+    },
+    {
+        "name": "BitBanana",
+        "description": "BitBanana acts as a remote control for your Lightning node. It enables Core Lightning users to send and receive using BOLT12, and it supports human-readable BOLT12 offers through DNS records (BIP353)",
+        "image": "projects/bitbanana.png",
+        "website": "https://bitbanana.app/",
+        "code": "https://github.com/michaelWuensch/BitBanana"
     }
 ]
