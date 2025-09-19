@@ -25,6 +25,13 @@
         "website": "https://lexe.app/",
         "code": "https://github.com/lexe-app/lexe-public"
     },
+     {
+        "name": "Cashu",
+        "description": "Cashu is a free and open-source Chaumian ecash protocol built for Bitcoin",
+        "image": "projects/cashu.jpg",
+        "website": "https://cashu.space/",
+        "code": "https://github.com/cashubtc"
+    },
     {
         "name": "Strike",
         "description": "Strike announced in August 2024 support for paying to BOLT 12 offers using LNDK in their backend systems.",
