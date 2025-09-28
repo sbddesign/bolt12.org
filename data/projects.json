@@ -1,5 +1,11 @@
 [
     {
+        "name": "Manna",
+        "description": "Self-custodial, bitcoin spending wallet that simply works.",
+        "image": "projects/manna.jpg",
+        "website": "https://mannabitcoin.com/"
+    },
+    {
         "name": "Alby Hub",
         "description": "Alby Hub is a self-custodial, open source lightning wallet that connects to apps.",
         "image": "projects/albyhub.svg",
