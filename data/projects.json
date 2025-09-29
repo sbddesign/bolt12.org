@@ -1,10 +1,17 @@
 [
     {
+        "name": "Manna",
+        "description": "Self-custodial, bitcoin spending wallet that simply works.",
+        "image": "projects/manna.jpg",
+        "website": "https://mannabitcoin.com/"
+    },
+    {
         "name": "Second (bark)",
         "description": "Simple solutions for integrating Ark and Lightning payments into your apps.",
         "image": "projects/second.jpg",
         "website": "https://second.tech/",
         "code": "https://codeberg.org/ark-bitcoin/bark"
+
     },
     {
         "name": "Alby Hub",
