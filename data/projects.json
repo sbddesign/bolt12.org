@@ -5,6 +5,7 @@
         "image": "projects/manna.jpg",
         "website": "https://mannabitcoin.com/"
     },
+    {
         "name": "Second (bark)",
         "description": "Simple solutions for integrating Ark and Lightning payments into your apps.",
         "image": "projects/second.jpg",
