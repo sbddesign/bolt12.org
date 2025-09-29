@@ -5,6 +5,13 @@
         "image": "projects/manna.jpg",
         "website": "https://mannabitcoin.com/"
     },
+        "name": "Second (bark)",
+        "description": "Simple solutions for integrating Ark and Lightning payments into your apps.",
+        "image": "projects/second.jpg",
+        "website": "https://second.tech/",
+        "code": "https://codeberg.org/ark-bitcoin/bark"
+
+    },
     {
         "name": "Alby Hub",
         "description": "Alby Hub is a self-custodial, open source lightning wallet that connects to apps.",
@@ -30,6 +37,13 @@
         "image": "projects/lexe.jpg",
         "website": "https://lexe.app/",
         "code": "https://github.com/lexe-app/lexe-public"
+    },
+     {
+        "name": "Cashu",
+        "description": "Cashu is a free and open-source Chaumian ecash protocol built for Bitcoin",
+        "image": "projects/cashu.jpg",
+        "website": "https://cashu.space/",
+        "code": "https://github.com/cashubtc"
     },
     {
         "name": "Strike",
