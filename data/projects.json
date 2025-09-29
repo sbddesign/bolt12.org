@@ -1,5 +1,12 @@
 [
     {
+        "name": "Second (bark)",
+        "description": "Simple solutions for integrating Ark and Lightning payments into your apps.",
+        "image": "projects/second.jpg",
+        "website": "https://second.tech/",
+        "code": "https://codeberg.org/ark-bitcoin/bark"
+    },
+    {
         "name": "Alby Hub",
         "description": "Alby Hub is a self-custodial, open source lightning wallet that connects to apps.",
         "image": "projects/albyhub.svg",
