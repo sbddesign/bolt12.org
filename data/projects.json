@@ -1,5 +1,11 @@
 [
     {
+        "name": "Megalithic",
+        "description": "Megalith is one of the biggest and most stable routing nodes on the Lightning Network.",
+        "image": "projects/megalith.webp",
+        "website": "https://megalithic.me/"
+    },
+    {
         "name": "Manna",
         "description": "Self-custodial, bitcoin spending wallet that simply works.",
         "image": "projects/manna.jpg",
@@ -11,7 +17,6 @@
         "image": "projects/second.jpg",
         "website": "https://second.tech/",
         "code": "https://codeberg.org/ark-bitcoin/bark"
-
     },
     {
         "name": "Alby Hub",
