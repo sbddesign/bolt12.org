@@ -16,7 +16,7 @@
         "description": "Simple solutions for integrating Ark and Lightning payments into your apps.",
         "image": "projects/second.jpg",
         "website": "https://second.tech/",
-        "code": "https://codeberg.org/ark-bitcoin/bark"
+        "code": "https://gitlab.com/ark-bitcoin/bark"
     },
     {
         "name": "Alby Hub",
