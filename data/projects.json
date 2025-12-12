@@ -192,9 +192,16 @@
     },
     {
         "name": "BitBanana",
-        "description": "BitBanana acts as a remote control for your Lightning node. It enables Core Lightning users to send and receive using BOLT12, and it supports human-readable BOLT12 offers through DNS records (BIP353)",
+        "description": "BitBanana acts as a remote control for your Lightning node. It enables Core Lightning users to send and receive using BOLT 12, and it supports human-readable BOLT 12 offers through DNS records (BIP 353).",
         "image": "projects/bitbanana.png",
         "website": "https://bitbanana.app/",
         "code": "https://github.com/michaelWuensch/BitBanana"
+    },
+    {
+        "name": "Lightning Detective",
+        "description": "Lightning Detective is a Rust library and a service designed to decode BOLT 12 offers, BIP 353 DNS records, and other payment instructions.",
+        "image": "projects/lndetective.png",
+        "website": "https://lndetective.dev",
+        "code": "https://github.com/andrei-21/lightning-detective"
     }
 ]
